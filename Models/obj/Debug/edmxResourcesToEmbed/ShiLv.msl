@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShiLvDBModelStoreContainer" CdmEntityContainer="ShiLvDBEntities">
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Activities">
+        <MappingFragment StoreEntitySet="Activities">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="publicityImage" ColumnName="publicityImage" />
+          <ScalarProperty Name="Holder" ColumnName="Holder" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+          <ScalarProperty Name="StartAddress" ColumnName="StartAddress" />
+          <ScalarProperty Name="DescDetail" ColumnName="DescDetail" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActivitiesJoin">
+      <EntityTypeMapping TypeName="ShiLvDBModel.ActivitiesJoin">
+        <MappingFragment StoreEntitySet="ActivitiesJoin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ActivitiesID" ColumnName="ActivitiesID" />
+          <ScalarProperty Name="JoinUsers" ColumnName="JoinUsers" />
+          <ScalarProperty Name="JoinTime" ColumnName="JoinTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Admins">
+        <MappingFragment StoreEntitySet="Admins">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdminPwd" ColumnName="AdminPwd" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnswerResult">
+      <EntityTypeMapping TypeName="ShiLvDBModel.AnswerResult">
+        <MappingFragment StoreEntitySet="AnswerResult">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Phase" ColumnName="Phase" />
+          <ScalarProperty Name="SumGrade" ColumnName="SumGrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Artefacts">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Artefacts">
+        <MappingFragment StoreEntitySet="Artefacts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="PublisheTime" ColumnName="PublisheTime" />
+          <ScalarProperty Name="ArtefactImage" ColumnName="ArtefactImage" />
+          <ScalarProperty Name="LikeNum" ColumnName="LikeNum" />
+          <ScalarProperty Name="ArtefactTypeID" ColumnName="ArtefactTypeID" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ArtefactType">
+      <EntityTypeMapping TypeName="ShiLvDBModel.ArtefactType">
+        <MappingFragment StoreEntitySet="ArtefactType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Typename" ColumnName="Typename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emergencys">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Emergencys">
+        <MappingFragment StoreEntitySet="Emergencys">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="EmerImage" ColumnName="EmerImage" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="publishTime" ColumnName="publishTime" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GarbagerAttitude">
+      <EntityTypeMapping TypeName="ShiLvDBModel.GarbagerAttitude">
+        <MappingFragment StoreEntitySet="GarbagerAttitude">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="JunkID" ColumnName="JunkID" />
+          <ScalarProperty Name="Attitude" ColumnName="Attitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Goods">
+        <MappingFragment StoreEntitySet="Goods">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoodsImage" ColumnName="GoodsImage" />
+          <ScalarProperty Name="RMBPrice" ColumnName="RMBPrice" />
+          <ScalarProperty Name="CreditPrice" ColumnName="CreditPrice" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GoodsTypeID" ColumnName="GoodsTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoodsType">
+      <EntityTypeMapping TypeName="ShiLvDBModel.GoodsType">
+        <MappingFragment StoreEntitySet="GoodsType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Junks">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Junks">
+        <MappingFragment StoreEntitySet="Junks">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="JunksName" ColumnName="JunksName" />
+          <ScalarProperty Name="JunkImage" ColumnName="JunkImage" />
+          <ScalarProperty Name="JunkTypeId" ColumnName="JunkTypeId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="LikeNum" ColumnName="LikeNum" />
+          <ScalarProperty Name="DislikeNum" ColumnName="DislikeNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JunkType">
+      <EntityTypeMapping TypeName="ShiLvDBModel.JunkType">
+        <MappingFragment StoreEntitySet="JunkType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="ShiLvDBModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="NewImage" ColumnName="NewImage" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetail">
+      <EntityTypeMapping TypeName="ShiLvDBModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="GoodsNum" ColumnName="GoodsNum" />
+          <ScalarProperty Name="UnitRMBPrice" ColumnName="UnitRMBPrice" />
+          <ScalarProperty Name="UnitCreditPrice" ColumnName="UnitCreditPrice" />
+          <ScalarProperty Name="SumRMBPrice" ColumnName="SumRMBPrice" />
+          <ScalarProperty Name="SumCreditPrice" ColumnName="SumCreditPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GoodsSum" ColumnName="GoodsSum" />
+          <ScalarProperty Name="MoneySum" ColumnName="MoneySum" />
+          <ScalarProperty Name="CreditSum" ColumnName="CreditSum" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="PayTime" ColumnName="PayTime" />
+          <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+          <ScalarProperty Name="ReceiveTime" ColumnName="ReceiveTime" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostBarType">
+      <EntityTypeMapping TypeName="ShiLvDBModel.PostBarType">
+        <MappingFragment StoreEntitySet="PostBarType">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Posts">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="PostTime" ColumnName="PostTime" />
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductReviews">
+      <EntityTypeMapping TypeName="ShiLvDBModel.ProductReviews">
+        <MappingFragment StoreEntitySet="ProductReviews">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="ReviewsContent" ColumnName="ReviewsContent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuestionPhase">
+      <EntityTypeMapping TypeName="ShiLvDBModel.QuestionPhase">
+        <MappingFragment StoreEntitySet="QuestionPhase">
+          <ScalarProperty Name="Phase" ColumnName="Phase" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Questions">
+        <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Stem" ColumnName="Stem" />
+          <ScalarProperty Name="OptionA" ColumnName="OptionA" />
+          <ScalarProperty Name="OptionB" ColumnName="OptionB" />
+          <ScalarProperty Name="OptionC" ColumnName="OptionC" />
+          <ScalarProperty Name="OptionD" ColumnName="OptionD" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reply">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Reply">
+        <MappingFragment StoreEntitySet="Reply">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="FromPost" ColumnName="FromPost" />
+          <ScalarProperty Name="ReplyFloor" ColumnName="ReplyFloor" />
+          <ScalarProperty Name="FloorNumber" ColumnName="FloorNumber" />
+          <ScalarProperty Name="SendTime" ColumnName="SendTime" />
+          <ScalarProperty Name="NowState" ColumnName="NowState" />
+          <ScalarProperty Name="IsReaded" ColumnName="IsReaded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShoppingCar">
+      <EntityTypeMapping TypeName="ShiLvDBModel.ShoppingCar">
+        <MappingFragment StoreEntitySet="ShoppingCar">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="GoodsNum" ColumnName="GoodsNum" />
+          <ScalarProperty Name="RMBPrice" ColumnName="RMBPrice" />
+          <ScalarProperty Name="CreditPrice" ColumnName="CreditPrice" />
+          <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+          <ScalarProperty Name="RMBSumPrice" ColumnName="RMBSumPrice" />
+          <ScalarProperty Name="CreditSumPrice" ColumnName="CreditSumPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAddress">
+      <EntityTypeMapping TypeName="ShiLvDBModel.UserAddress">
+        <MappingFragment StoreEntitySet="UserAddress">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Addressee" ColumnName="Addressee" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAttitude">
+      <EntityTypeMapping TypeName="ShiLvDBModel.UserAttitude">
+        <MappingFragment StoreEntitySet="UserAttitude">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="ArtefactID" ColumnName="ArtefactID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserInfo">
+      <EntityTypeMapping TypeName="ShiLvDBModel.UserInfo">
+        <MappingFragment StoreEntitySet="UserInfo">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="UserEmail" ColumnName="UserEmail" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="UserImage" ColumnName="UserImage" />
+          <ScalarProperty Name="UserDesc" ColumnName="UserDesc" />
+          <ScalarProperty Name="UserCredit" ColumnName="UserCredit" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="NewsPower" ColumnName="NewsPower" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ShiLvDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserPwd" ColumnName="UserPwd" />
+          <ScalarProperty Name="UserPower" ColumnName="UserPower" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="UserFollow" TypeName="ShiLvDBModel.UserFollow" StoreEntitySet="UserFollow">
+      <EndProperty Name="Users">
+        <ScalarProperty Name="UserName" ColumnName="StarUser" />
+      </EndProperty>
+      <EndProperty Name="Users1">
+        <ScalarProperty Name="UserName" ColumnName="UserName" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

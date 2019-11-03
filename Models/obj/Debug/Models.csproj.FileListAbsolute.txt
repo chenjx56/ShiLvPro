@@ -1,0 +1,13 @@
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\Models.dll.config
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\Models.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\Models.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\EntityFramework.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\EntityFramework.xml
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\obj\Debug\Models.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\Models\obj\Debug\Models.pdb

@@ -1,0 +1,814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShiLvDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Activities">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="publicityImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="Holder" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="StartAddress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DescDetail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivitiesJoin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ActivitiesID" Type="int" Nullable="false" />
+    <Property Name="JoinUsers" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="JoinTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Admins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdminPwd" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NickName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AnswerResult">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Phase" Type="int" />
+    <Property Name="SumGrade" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Artefacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PublisheTime" Type="datetime" Nullable="false" />
+    <Property Name="ArtefactImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="LikeNum" Type="int" Nullable="false" />
+    <Property Name="ArtefactTypeID" Type="int" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ArtefactType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Typename" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emergencys">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EmerImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="publishTime" Type="datetime" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GarbagerAttitude">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="JunkID" Type="int" Nullable="false" />
+    <Property Name="Attitude" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Goods">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GoodsImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RMBPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CreditPrice" Type="int" Nullable="false" />
+    <Property Name="Stock" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GoodsTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GoodsType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Junks">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="JunksName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="JunkImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="JunkTypeId" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="LikeNum" Type="int" Nullable="false" />
+    <Property Name="DislikeNum" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JunkType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NewImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Origin" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="GoodsNum" Type="int" Nullable="false" />
+    <Property Name="UnitRMBPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="UnitCreditPrice" Type="int" Nullable="false" />
+    <Property Name="SumRMBPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="SumCreditPrice" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GoodsSum" Type="int" Nullable="false" />
+    <Property Name="MoneySum" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CreditSum" Type="int" Nullable="false" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="PayTime" Type="datetime" Nullable="false" />
+    <Property Name="SendTime" Type="datetime" Nullable="false" />
+    <Property Name="ReceiveTime" Type="datetime" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PostBarType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TypeName" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Posts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Author" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PostTime" Type="datetime" Nullable="false" />
+    <Property Name="TypeID" Type="int" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductReviews">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="ReviewsContent" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QuestionPhase">
+    <Key>
+      <PropertyRef Name="Phase" />
+    </Key>
+    <Property Name="Phase" Type="int" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Questions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Stem" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="OptionA" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="OptionB" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="OptionC" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="OptionD" Type="varchar" MaxLength="500" Nullable="false" />
+    <Property Name="Answer" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reply">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Content" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="FromPost" Type="int" Nullable="false" />
+    <Property Name="ReplyFloor" Type="int" Nullable="false" />
+    <Property Name="FloorNumber" Type="int" Nullable="false" />
+    <Property Name="SendTime" Type="datetime" Nullable="false" />
+    <Property Name="NowState" Type="int" Nullable="false" />
+    <Property Name="IsReaded" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShoppingCar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="GoodsNum" Type="int" Nullable="false" />
+    <Property Name="RMBPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CreditPrice" Type="int" Nullable="false" />
+    <Property Name="AddTime" Type="datetime" Nullable="false" />
+    <Property Name="RMBSumPrice" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="CreditSumPrice" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserAddress">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Addressee" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="PostCode" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserAttitude">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ArtefactID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserFollow">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="StarUser" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserInfo">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NickName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="2" Nullable="false" />
+    <Property Name="UserEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="11" />
+    <Property Name="UserImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserDesc" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserCredit" Type="int" Nullable="false" />
+    <Property Name="Country" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Province" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="NewsPower" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserName" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="UserPwd" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="UserPower" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Activitie__Activ__6A30C649">
+    <End Role="Activities" Type="Self.Activities" Multiplicity="1" />
+    <End Role="ActivitiesJoin" Type="Self.ActivitiesJoin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activities">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ActivitiesJoin">
+        <PropertyRef Name="ActivitiesID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Activitie__Holde__32E0915F">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Activities" Type="Self.Activities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Activities">
+        <PropertyRef Name="Holder" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Activitie__JoinU__6B24EA82">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ActivitiesJoin" Type="Self.ActivitiesJoin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="ActivitiesJoin">
+        <PropertyRef Name="JoinUsers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnswerRes__Phase__6EF57B66">
+    <End Role="QuestionPhase" Type="Self.QuestionPhase" Multiplicity="0..1" />
+    <End Role="AnswerResult" Type="Self.AnswerResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuestionPhase">
+        <PropertyRef Name="Phase" />
+      </Principal>
+      <Dependent Role="AnswerResult">
+        <PropertyRef Name="Phase" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AnswerRes__UserN__6E01572D">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="AnswerResult" Type="Self.AnswerResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="AnswerResult">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Artefacts__Artef__25869641">
+    <End Role="ArtefactType" Type="Self.ArtefactType" Multiplicity="1" />
+    <End Role="Artefacts" Type="Self.Artefacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ArtefactType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Artefacts">
+        <PropertyRef Name="ArtefactTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Artefacts__Autho__22AA2996">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Artefacts" Type="Self.Artefacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Artefacts">
+        <PropertyRef Name="Author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Emergency__UserN__37A5467C">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Emergencys" Type="Self.Emergencys" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Emergencys">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GarbagerA__JunkI__7A672E12">
+    <End Role="Junks" Type="Self.Junks" Multiplicity="1" />
+    <End Role="GarbagerAttitude" Type="Self.GarbagerAttitude" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Junks">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GarbagerAttitude">
+        <PropertyRef Name="JunkID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__GarbagerA__UserN__797309D9">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="GarbagerAttitude" Type="Self.GarbagerAttitude" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="GarbagerAttitude">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Goods__GoodsType__59FA5E80">
+    <End Role="GoodsType" Type="Self.GoodsType" Multiplicity="1" />
+    <End Role="Goods" Type="Self.Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GoodsType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Goods">
+        <PropertyRef Name="GoodsTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Goods__UserName__59063A47">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Goods" Type="Self.Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Goods">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Junks__JunkTypeI__3F466844">
+    <End Role="JunkType" Type="Self.JunkType" Multiplicity="1" />
+    <End Role="Junks" Type="Self.Junks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JunkType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Junks">
+        <PropertyRef Name="JunkTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Junks__UserName__403A8C7D">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Junks" Type="Self.Junks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Junks">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderDeta__Goods__60A75C0F">
+    <End Role="Goods" Type="Self.Goods" Multiplicity="1" />
+    <End Role="OrderDetail" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goods">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="GoodsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderDeta__Order__5FB337D6">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderDetail" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Orders__UserName__5CD6CB2B">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Posts__Author__46E78A0C">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Posts">
+        <PropertyRef Name="Author" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Posts__TypeID__48CFD27E">
+    <End Role="PostBarType" Type="Self.PostBarType" Multiplicity="1" />
+    <End Role="Posts" Type="Self.Posts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostBarType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Posts">
+        <PropertyRef Name="TypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductRe__Goods__76969D2E">
+    <End Role="Goods" Type="Self.Goods" Multiplicity="1" />
+    <End Role="ProductReviews" Type="Self.ProductReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goods">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ProductReviews">
+        <PropertyRef Name="GoodsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ProductRe__UserN__75A278F5">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ProductReviews" Type="Self.ProductReviews" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="ProductReviews">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reply__FromPost__4E88ABD4">
+    <End Role="Posts" Type="Self.Posts" Multiplicity="1" />
+    <End Role="Reply" Type="Self.Reply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Posts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Reply">
+        <PropertyRef Name="FromPost" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reply__UserName__4D94879B">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Reply" Type="Self.Reply" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="Reply">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__Goods__72C60C4A">
+    <End Role="Goods" Type="Self.Goods" Multiplicity="1" />
+    <End Role="ShoppingCar" Type="Self.ShoppingCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goods">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ShoppingCar">
+        <PropertyRef Name="GoodsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ShoppingC__UserN__71D1E811">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="ShoppingCar" Type="Self.ShoppingCar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="ShoppingCar">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserAddre__UserN__6383C8BA">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserAddress" Type="Self.UserAddress" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="UserAddress">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserAttit__Artef__6754599E">
+    <End Role="Artefacts" Type="Self.Artefacts" Multiplicity="1" />
+    <End Role="UserAttitude" Type="Self.UserAttitude" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Artefacts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserAttitude">
+        <PropertyRef Name="ArtefactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserAttit__UserN__66603565">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserAttitude" Type="Self.UserAttitude" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="UserAttitude">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserFollo__StarU__7F2BE32F">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserFollow" Type="Self.UserFollow" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="UserFollow">
+        <PropertyRef Name="StarUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserFollo__UserN__7E37BEF6">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserFollow" Type="Self.UserFollow" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="UserFollow">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserInfo__UserNa__1BFD2C07">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="UserInfo" Type="Self.UserInfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserName" />
+      </Principal>
+      <Dependent Role="UserInfo">
+        <PropertyRef Name="UserName" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ShiLvDBModelStoreContainer">
+    <EntitySet Name="Activities" EntityType="Self.Activities" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ActivitiesJoin" EntityType="Self.ActivitiesJoin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Admins" EntityType="Self.Admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AnswerResult" EntityType="Self.AnswerResult" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Artefacts" EntityType="Self.Artefacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ArtefactType" EntityType="Self.ArtefactType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Emergencys" EntityType="Self.Emergencys" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GarbagerAttitude" EntityType="Self.GarbagerAttitude" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Goods" EntityType="Self.Goods" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GoodsType" EntityType="Self.GoodsType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Junks" EntityType="Self.Junks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="JunkType" EntityType="Self.JunkType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetail" EntityType="Self.OrderDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PostBarType" EntityType="Self.PostBarType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Posts" EntityType="Self.Posts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductReviews" EntityType="Self.ProductReviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuestionPhase" EntityType="Self.QuestionPhase" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Questions" EntityType="Self.Questions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reply" EntityType="Self.Reply" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShoppingCar" EntityType="Self.ShoppingCar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAddress" EntityType="Self.UserAddress" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserAttitude" EntityType="Self.UserAttitude" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserFollow" EntityType="Self.UserFollow" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserInfo" EntityType="Self.UserInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Activitie__Activ__6A30C649" Association="Self.FK__Activitie__Activ__6A30C649">
+      <End Role="Activities" EntitySet="Activities" />
+      <End Role="ActivitiesJoin" EntitySet="ActivitiesJoin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Activitie__Holde__32E0915F" Association="Self.FK__Activitie__Holde__32E0915F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Activities" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Activitie__JoinU__6B24EA82" Association="Self.FK__Activitie__JoinU__6B24EA82">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ActivitiesJoin" EntitySet="ActivitiesJoin" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnswerRes__Phase__6EF57B66" Association="Self.FK__AnswerRes__Phase__6EF57B66">
+      <End Role="QuestionPhase" EntitySet="QuestionPhase" />
+      <End Role="AnswerResult" EntitySet="AnswerResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AnswerRes__UserN__6E01572D" Association="Self.FK__AnswerRes__UserN__6E01572D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="AnswerResult" EntitySet="AnswerResult" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Artefacts__Artef__25869641" Association="Self.FK__Artefacts__Artef__25869641">
+      <End Role="ArtefactType" EntitySet="ArtefactType" />
+      <End Role="Artefacts" EntitySet="Artefacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Artefacts__Autho__22AA2996" Association="Self.FK__Artefacts__Autho__22AA2996">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Artefacts" EntitySet="Artefacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Emergency__UserN__37A5467C" Association="Self.FK__Emergency__UserN__37A5467C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Emergencys" EntitySet="Emergencys" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GarbagerA__JunkI__7A672E12" Association="Self.FK__GarbagerA__JunkI__7A672E12">
+      <End Role="Junks" EntitySet="Junks" />
+      <End Role="GarbagerAttitude" EntitySet="GarbagerAttitude" />
+    </AssociationSet>
+    <AssociationSet Name="FK__GarbagerA__UserN__797309D9" Association="Self.FK__GarbagerA__UserN__797309D9">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="GarbagerAttitude" EntitySet="GarbagerAttitude" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Goods__GoodsType__59FA5E80" Association="Self.FK__Goods__GoodsType__59FA5E80">
+      <End Role="GoodsType" EntitySet="GoodsType" />
+      <End Role="Goods" EntitySet="Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Goods__UserName__59063A47" Association="Self.FK__Goods__UserName__59063A47">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Goods" EntitySet="Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Junks__JunkTypeI__3F466844" Association="Self.FK__Junks__JunkTypeI__3F466844">
+      <End Role="JunkType" EntitySet="JunkType" />
+      <End Role="Junks" EntitySet="Junks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Junks__UserName__403A8C7D" Association="Self.FK__Junks__UserName__403A8C7D">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Junks" EntitySet="Junks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderDeta__Goods__60A75C0F" Association="Self.FK__OrderDeta__Goods__60A75C0F">
+      <End Role="Goods" EntitySet="Goods" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderDeta__Order__5FB337D6" Association="Self.FK__OrderDeta__Order__5FB337D6">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Orders__UserName__5CD6CB2B" Association="Self.FK__Orders__UserName__5CD6CB2B">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Posts__Author__46E78A0C" Association="Self.FK__Posts__Author__46E78A0C">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Posts" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Posts__TypeID__48CFD27E" Association="Self.FK__Posts__TypeID__48CFD27E">
+      <End Role="PostBarType" EntitySet="PostBarType" />
+      <End Role="Posts" EntitySet="Posts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductRe__Goods__76969D2E" Association="Self.FK__ProductRe__Goods__76969D2E">
+      <End Role="Goods" EntitySet="Goods" />
+      <End Role="ProductReviews" EntitySet="ProductReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ProductRe__UserN__75A278F5" Association="Self.FK__ProductRe__UserN__75A278F5">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ProductReviews" EntitySet="ProductReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reply__FromPost__4E88ABD4" Association="Self.FK__Reply__FromPost__4E88ABD4">
+      <End Role="Posts" EntitySet="Posts" />
+      <End Role="Reply" EntitySet="Reply" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reply__UserName__4D94879B" Association="Self.FK__Reply__UserName__4D94879B">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Reply" EntitySet="Reply" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__Goods__72C60C4A" Association="Self.FK__ShoppingC__Goods__72C60C4A">
+      <End Role="Goods" EntitySet="Goods" />
+      <End Role="ShoppingCar" EntitySet="ShoppingCar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ShoppingC__UserN__71D1E811" Association="Self.FK__ShoppingC__UserN__71D1E811">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="ShoppingCar" EntitySet="ShoppingCar" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserAddre__UserN__6383C8BA" Association="Self.FK__UserAddre__UserN__6383C8BA">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserAddress" EntitySet="UserAddress" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserAttit__Artef__6754599E" Association="Self.FK__UserAttit__Artef__6754599E">
+      <End Role="Artefacts" EntitySet="Artefacts" />
+      <End Role="UserAttitude" EntitySet="UserAttitude" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserAttit__UserN__66603565" Association="Self.FK__UserAttit__UserN__66603565">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserAttitude" EntitySet="UserAttitude" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserFollo__StarU__7F2BE32F" Association="Self.FK__UserFollo__StarU__7F2BE32F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserFollow" EntitySet="UserFollow" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserFollo__UserN__7E37BEF6" Association="Self.FK__UserFollo__UserN__7E37BEF6">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserFollow" EntitySet="UserFollow" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserInfo__UserNa__1BFD2C07" Association="Self.FK__UserInfo__UserNa__1BFD2C07">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserInfo" EntitySet="UserInfo" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
