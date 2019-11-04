@@ -10,5 +10,6 @@ namespace IDAL
     public interface INewsDAL : IBaseDAL<News>
     {
         IQueryable<News> GetNewsByName(string newsName);
+        IQueryable<News> GetNewsForIndex();
     }
 }

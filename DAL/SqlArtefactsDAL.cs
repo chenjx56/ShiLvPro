@@ -10,6 +10,10 @@ namespace DAL
 {
     public class SqlArtefactsDAL : SqlBaseDAL<Artefacts>, IArtefactsDAL
     {
-
+        public IQueryable<Artefacts> GetArtefactsForIndex()
+        {
+            IQueryable<Artefacts> listArtefacts = db.Artefacts.Select(o => o).OrderBy(p => p.ID).Take(6);
+            return listArtefacts;
+        }
     }
 }

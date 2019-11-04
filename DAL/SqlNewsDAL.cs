@@ -15,5 +15,11 @@ namespace DAL
             IQueryable<News> listNews = db.News.Select(o => o).Where(p => p.Title.Contains(newsName));
             return listNews;
         }
+
+        public IQueryable<News> GetNewsForIndex()
+        {
+            IQueryable<News> listNews = db.News.Select(o => o).OrderByDescending(p => p.CreateTime).Take(3);
+            return listNews;
+        }
     }
 }

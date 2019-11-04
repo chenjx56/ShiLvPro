@@ -17,6 +17,7 @@ namespace Models
         public int ID { get; set; }
         public string Content { get; set; }
         public string EmerImage { get; set; }
+        public string EmerPlace { get; set; }
         public string UserName { get; set; }
         public System.DateTime publishTime { get; set; }
         public int NowState { get; set; }

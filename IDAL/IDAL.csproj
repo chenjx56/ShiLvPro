@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="IArtefactsDAL.cs" />
     <Compile Include="IBaseDAL.cs" />
+    <Compile Include="IEmergencysDAL.cs" />
     <Compile Include="INewsDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

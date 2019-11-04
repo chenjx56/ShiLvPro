@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ArtefactsBLL.cs" />
     <Compile Include="BaseBLL.cs" />
+    <Compile Include="EmergencysBLL.cs" />
     <Compile Include="NewsBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

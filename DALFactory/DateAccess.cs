@@ -23,5 +23,10 @@ namespace DALFactory
             string className = AssemblyName + "." + db + "ArtefactsDAL";
             return (IArtefactsDAL)Assembly.Load(AssemblyName).CreateInstance(className);
         }
+        public static IEmergencysDAL GetEmergencysDAL()
+        {
+            string className = AssemblyName + "." + db + "EmergencysDAL";
+            return (IEmergencysDAL)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
     }
 }

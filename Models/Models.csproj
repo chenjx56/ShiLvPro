@@ -68,7 +68,6 @@
     <Compile Include="ArtefactType.cs">
       <DependentUpon>ShiLv.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Emergencys.cs">
       <DependentUpon>ShiLv.tt</DependentUpon>
     </Compile>
@@ -147,32 +146,30 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
     <EntityDeploy Include="ShiLv.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ShiLv.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <None Include="packages.config" />
     <None Include="ShiLv.edmx.diagram">
       <DependentUpon>ShiLv.edmx</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ShiLv.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ShiLv.Context.cs</LastGenOutput>
       <DependentUpon>ShiLv.edmx</DependentUpon>
+      <LastGenOutput>ShiLv.Context.cs</LastGenOutput>
     </Content>
     <Content Include="ShiLv.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ShiLv.edmx</DependentUpon>
       <LastGenOutput>ShiLv.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

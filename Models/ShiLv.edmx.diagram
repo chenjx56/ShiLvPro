@@ -4,33 +4,33 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c869d2bfccb447ebb22e184493893d2b" Name="Diagram1">
+      <Diagram DiagramId="603109b0db30413ebddfa1de6a55920a" Name="Diagram1">
         <EntityTypeShape EntityType="ShiLvDBModel.Activities" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.ActivitiesJoin" Width="1.5" PointX="5.25" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.ActivitiesJoin" Width="1.5" PointX="5.25" PointY="21.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ShiLvDBModel.Admins" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.AnswerResult" Width="1.5" PointX="3" PointY="24.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Artefacts" Width="1.5" PointX="6" PointY="24.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.ArtefactType" Width="1.5" PointX="3.75" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.AnswerResult" Width="1.5" PointX="3" PointY="23.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Artefacts" Width="1.5" PointX="6" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.ArtefactType" Width="1.5" PointX="3.75" PointY="30.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ShiLvDBModel.Emergencys" Width="1.5" PointX="3" PointY="27" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.GarbagerAttitude" Width="1.5" PointX="3" PointY="21.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Goods" Width="1.5" PointX="6" PointY="28.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.GoodsType" Width="1.5" PointX="3.75" PointY="33.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Junks" Width="1.5" PointX="8" PointY="20.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.JunkType" Width="1.5" PointX="5.75" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.GarbagerAttitude" Width="1.5" PointX="6" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Goods" Width="1.5" PointX="8" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.GoodsType" Width="1.5" PointX="5.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Junks" Width="1.5" PointX="9" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.JunkType" Width="1.5" PointX="6.75" PointY="32.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ShiLvDBModel.News" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.OrderDetail" Width="1.5" PointX="8.25" PointY="34.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Orders" Width="1.5" PointX="3" PointY="40.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.PostBarType" Width="1.5" PointX="6.75" PointY="15.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Posts" Width="1.5" PointX="9" PointY="24.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.ProductReviews" Width="1.5" PointX="8.25" PointY="28.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.OrderDetail" Width="1.5" PointX="11.25" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Orders" Width="1.5" PointX="3" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.PostBarType" Width="1.5" PointX="6.75" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Posts" Width="1.5" PointX="9" PointY="29" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.ProductReviews" Width="1.5" PointX="11.25" PointY="23.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ShiLvDBModel.QuestionPhase" Width="1.5" PointX="0.75" PointY="19.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ShiLvDBModel.Questions" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Reply" Width="1.5" PointX="14.25" PointY="23.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.ShoppingCar" Width="1.5" PointX="11.25" PointY="27.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.UserAddress" Width="1.5" PointX="3" PointY="48" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.UserAttitude" Width="1.5" PointX="11.25" PointY="24.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.UserInfo" Width="1.5" PointX="3" PointY="51" IsExpanded="true" />
-        <EntityTypeShape EntityType="ShiLvDBModel.Users" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Reply" Width="1.5" PointX="14.25" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.ShoppingCar" Width="1.5" PointX="10.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.UserAddress" Width="1.5" PointX="3" PointY="48.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.UserAttitude" Width="1.5" PointX="11.25" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.UserInfo" Width="1.5" PointX="3" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ShiLvDBModel.Users" Width="1.5" PointX="0.75" PointY="22.875" IsExpanded="true" />
         <AssociationConnector Association="ShiLvDBModel.FK__Activitie__Activ__6A30C649" ManuallyRouted="false" />
         <AssociationConnector Association="ShiLvDBModel.FK__Activitie__Holde__32E0915F" ManuallyRouted="false" />
         <AssociationConnector Association="ShiLvDBModel.FK__Activitie__JoinU__6B24EA82" ManuallyRouted="false" />

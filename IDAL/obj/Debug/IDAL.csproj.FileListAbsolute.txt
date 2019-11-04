@@ -11,3 +11,16 @@ C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\IDAL\obj\Debug\IDAL
 C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\IDAL\obj\Debug\IDAL.csproj.CopyComplete
 C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\IDAL\obj\Debug\IDAL.dll
 C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\IDAL\obj\Debug\IDAL.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\IDAL.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\IDAL.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\Models.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\EntityFramework.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\Models.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\Models.dll.config
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\EntityFramework.xml
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.csprojAssemblyReference.cache
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.csproj.CoreCompileInputs.cache
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.csproj.CopyComplete
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.pdb

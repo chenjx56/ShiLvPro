@@ -19,5 +19,9 @@ namespace BLL
         {
             return newsDAL.GetNewsByName(newsName);
         }
+        public IQueryable<News> GetNewsForIndex()
+        {
+            return newsDAL.GetNewsForIndex();
+        }
     }
 }

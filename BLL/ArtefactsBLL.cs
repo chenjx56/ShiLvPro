@@ -15,5 +15,9 @@ namespace BLL
         {
             Dal = artefactsDAL;
         }
+        public IQueryable<Artefacts> GetArtefactsForIndex()
+        {
+            return artefactsDAL.GetArtefactsForIndex();
+        }
     }
 }

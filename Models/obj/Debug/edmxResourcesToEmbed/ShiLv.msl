@@ -73,6 +73,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Content" ColumnName="Content" />
           <ScalarProperty Name="EmerImage" ColumnName="EmerImage" />
+          <ScalarProperty Name="EmerPlace" ColumnName="EmerPlace" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
           <ScalarProperty Name="publishTime" ColumnName="publishTime" />
           <ScalarProperty Name="NowState" ColumnName="NowState" />

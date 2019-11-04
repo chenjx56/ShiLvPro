@@ -1,31 +1,162 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model ShiLv.WebUI.Models.HomeIndexViewModel
+@{
+    Layout = null;
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拾绿 - 环保人的聚集地</title>
+    <link rel="stylesheet" href="~/Content/css/index.css">
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico">
+</head>
+<body>
+    <div class="bg">
+        <!-- 顶部导航+顶部logo -->
+        <div class="page-top">
+            <div class="top-nav">
+                <div class="prompt"></div>
+                <div class="left">
+                    <a href="#" class="question">拾绿之家</a>
+                    <a href="#" class="junks">垃圾分类</a>
+                    <a href="#" class="news">新闻资讯</a>
+                    <a href="#" class="help">紧急求助</a>
+                </div>
+                <div class="right">
+                    <a href="#" class="activity">拾绿商城</a>
+                    <a href="#" class="works">作品分享</a>
+                    <a href="#" class="shop">参与活动</a>
+                    <a href="#" class="post-bar">知识竞答</a>
+                </div>
+                <div class="hover-box"></div>
+                <div class="click-hand"></div>
+            </div>
+            <div class="head-image">
+                <img src="~/Content/images/headImage1.jpg" alt="">
+            </div>
+            <div class="top-logo"><span>拾起一片绿</span><a href="./Home/Index"><img src="~/Content/images/logo-border.png" alt="logo"></a><span>共迎一片天</span></div>
+        </div>
+        <!-- 轮播大图 -->
+        <div class="banner">
+            <ul class="banner-list">
+                <li class="active"><img src="~/Content/images/banner/banner1.jpg" alt=""></li>
+                <li><img src="~/Content/images/banner/banner2.jpg" alt=""></li>
+                <li><img src="~/Content/images/banner/banner3.jpg" alt=""></li>
+                <li><img src="~/Content/images/banner/banner4.jpg" alt=""></li>
+            </ul>
+            <div class="prev"></div>
+            <div class="next"></div>
+            <ul class="page-list">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 中间新闻内容区 -->
+        <ul class="new-show">
+            <div class="title">
+                <img src="~/Content/images/index/title2.png" alt="">
+                <p class="title-name">新闻资讯</p>
+            </div>
+            @foreach ( var item in Model.Newlist1)
+            {
+                <li>
+                    <div class="new-title">@(item.Title)</div>
+                    <p class="solid"></p>
+                    <p class="content">
+                        @(item.Content)
+                    </p>
+                    <a href="#" class="btn-more">查看详情</a>
+                </li>
+            }
+        </ul>
+        <!-- 中间手工区 -->
+        <ul class="work-show">
+            <div class="title">
+                <img src="~/Content/images/index/title1.png" alt="">
+                <p class="title-name">优秀手工</p>
+            </div>
+            @foreach (var item in Model.Artefacts1)
+            {
+                <li><img src="~/Content/images/@(item.ArtefactImage)" alt=""></li>
+            }
+        </ul>
+        <!-- 中间紧急求助区 -->
+        <div class="please-help">
+            <div class="title">
+                <img src="~/Content/images/index/title3.png" alt="">
+                <p class="title-name">求助地区</p>
+            </div>
+            <ul class="for-help">
+                @for (int i = 0; i < 8; i++)
+                {
+                    <li><a href="#">@Model.Emergencys1.ElementAt(i).EmerPlace</a></li>
+                }
+            </ul>
+            <ul class="for-help">
+                @for (int i = 8; i < 15; i++)
+                {
+                    <li><a href="#">@Model.Emergencys1.ElementAt(i).EmerPlace</a></li>
+                }
+                <li><a href="#">更多 &gt;</a></li>
+            </ul>
+        </div>
+        <!-- 底部导航 -->
+        <div class="page-bottom">
+            <div class="nr">
+                <p class="title">信息阅览</p>
+                <ul class="message">
+                    <li><a href="#">作品分享</a></li>
+                    <li><a href="#">新闻资讯</a></li>
+                    <li><a href="#">紧急求助</a></li>
+                    <li><a href="#">垃圾分类</a></li>
+                </ul>
+            </div>
+            <div class="nr">
+                <p class="title">功能使用</p>
+                <ul class="message">
+                    <li><a href="#">拾绿商城</a></li>
+                    <li><a href="#">拾绿之家</a></li>
+                    <li><a href="#">参与活动</a></li>
+                    <li><a href="#">知识竞答</a></li>
+                </ul>
+            </div>
+            <div class="bottom-logo">
+                <img src="~/Content/images/logo-noborder.png" alt="">
+            </div>
+            <div class="friends">
+                <p class="title">友情链接</p>
+                <ul class="message">
+                    <li><a href="http://www.chinaenvironment.com/">环保网</a></li>
+                    <li><a href="http://www.mee.gov.cn/">环保部</a></li>
+                    <li><a href="http://www.csapa.org/index.jhtml">小动物保护协会</a></li>
+                    <li><a href="http://www.plantprotection.ac.cn/ch/index.aspx">植物保护</a></li>
+                </ul>
+            </div>
+            <div class="talk-us">
+                <p class="title">联系我们</p>
+                <ul class="message">
+                    <li>电子邮箱</li>
+                    <li>腾讯 Q Q</li>
+                    <li>微信公众号</li>
+                    <li>新浪微博</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 底部页脚 -->
+        <div class="page-foot">
+            <span>地址：江西师范大学瑶湖校区先骕楼</span>
+            <a href="#">后台入口</a>
+            <span>指导老师：曾雅琳</span>
+            <span>版权所有&copy;江西师范大学软件学院</span>
+        </div>
+    </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/index.js"></script>
+</body>
+</html>

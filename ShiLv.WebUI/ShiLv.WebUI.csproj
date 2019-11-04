@@ -143,19 +143,42 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomeIndexViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap-theme.css" />
-    <Content Include="Content\bootstrap-theme.min.css" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\index.css" />
+    <Content Include="Content\images\93064814c57aa1b4c7869e25620d4f36.png" />
+    <Content Include="Content\images\background.png" />
+    <Content Include="Content\images\banner\banner1.jpg" />
+    <Content Include="Content\images\banner\banner2.jpg" />
+    <Content Include="Content\images\banner\banner3.jpg" />
+    <Content Include="Content\images\banner\banner4.jpg" />
+    <Content Include="Content\images\banner\button.png" />
+    <Content Include="Content\images\banner\page1.png" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\headImage1.jpg" />
+    <Content Include="Content\images\index\title1.png" />
+    <Content Include="Content\images\index\title2.png" />
+    <Content Include="Content\images\index\title3.png" />
+    <Content Include="Content\images\logo-border.png" />
+    <Content Include="Content\images\logo-noborder.png" />
+    <Content Include="Content\images\news\1.jpg" />
+    <Content Include="Content\images\news\2.jpg" />
+    <Content Include="Content\images\news\3.jpeg" />
+    <Content Include="Content\images\work\1.png" />
+    <Content Include="Content\images\work\2.png" />
+    <Content Include="Content\images\work\3.png" />
+    <Content Include="Content\images\work\4.png" />
+    <Content Include="Content\images\work\5.png" />
+    <Content Include="Content\images\work\6.png" />
+    <Content Include="Content\js\index.js" />
+    <Content Include="Content\js\jquery.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\css\字魂43号-国潮手书.ttf" />
+    <Content Include="Content\css\李旭科书法.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -178,24 +201,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Content\bootstrap.min.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Content\bootstrap-theme.min.css.map" />
-    <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />

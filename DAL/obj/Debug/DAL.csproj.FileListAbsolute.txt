@@ -20,3 +20,11 @@ C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\DAL\obj\Debug\DAL.p
 C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\ShiLv.WebUI\bin\DAL.dll.config
 C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\ShiLv.WebUI\bin\DAL.dll
 C:\Users\jxChen\Desktop\本学期项目——拾绿\ShiLvPro\ShiLv.WebUI\bin\DAL.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\DAL.dll.config
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\DAL.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\DAL.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.pdb

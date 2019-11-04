@@ -65,8 +65,9 @@
       <PropertyRef Name="ID" />
     </Key>
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Content" Type="nvarchar(max)" />
     <Property Name="EmerImage" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmerPlace" Type="nvarchar" MaxLength="50" />
     <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="publishTime" Type="datetime" Nullable="false" />
     <Property Name="NowState" Type="int" Nullable="false" />
