@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@ViewBag.Title - 拾绿网</title>
+    <link href="~/Content/css/common.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico">
+    @RenderSection("css", false)
+</head>
+<body>
+    <div class="bg">
+        <!-- 顶部 -->
+        <div class="nav-wrapper">
+            <div class="user-pic"><img src="~/Content/images/logo-noborder.png" alt="" width="65" height="65"></div>
+            <div class="nav">
+                <a href="#"><div class="nav-logo"></div></a>
+                <div class="nav-left nav-text">
+                    <span><a href="#">拾绿之家</a></span>
+                    <span><a href="">垃圾分类</a></span>
+                    <span><a href="">新闻资讯</a></span>
+                    <span><a href="">紧急求助</a></span>
+                </div>
+                <div class="nav-right text">
+                    <span><a href="">拾绿商城</a></span>
+                    <span><a href="">作品分享</a></span>
+                    <span><a href="">参与活动</a></span>
+                    <span><a href="">知识竞答</a></span>
+                </div>
+            </div>
+        </div>
+
+        @RenderBody()
+
+        <!-- 底部 -->
+        <!-- 底部导航 -->
+        <div class="page-bottom">
+            <div class="nr">
+                <p class="title">信息阅览</p>
+                <ul class="message">
+                    <li>作品分享</li>
+                    <li>新闻资讯</li>
+                    <li>紧急求助</li>
+                    <li>垃圾分类</li>
+                </ul>
+            </div>
+            <div class="nr">
+                <p class="title">功能使用</p>
+                <ul class="message">
+                    <li>拾绿商城</li>
+                    <li>拾绿之家</li>
+                    <li>参与活动</li>
+                    <li>知识竞答</li>
+                </ul>
+            </div>
+            <div class="bottom-logo">
+                <img src="~/Content/images/logo-noborder.png" alt="">
+            </div>
+            <div class="friends">
+                <p class="title">友情链接</p>
+                <ul class="message">
+                    <li><a href="http://www.chinaenvironment.com/">环保网</a></li>
+                    <li><a href="http://www.mee.gov.cn/">环保部</a></li>
+                    <li><a href="http://www.csapa.org/index.jhtml">小动物保护协会</a></li>
+                    <li><a href="http://www.plantprotection.ac.cn/ch/index.aspx">植物保护</a></li>
+                </ul>
+            </div>
+            <div class="talk-us">
+                <p class="title">联系我们</p>
+                <ul class="message">
+                    <li>电子邮箱</li>
+                    <li>腾讯 Q Q</li>
+                    <li>微信公众号</li>
+                    <li>新浪微博</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 底部页脚 -->
+        <div class="page-foot">
+            <span>地址：江西师范大学瑶湖校区先骕楼</span>
+            <a href="#">后台入口</a>
+            <span>指导老师：曾雅琳</span>
+            <span>版权所有&copy;江西师范大学软件学院</span>
+        </div>
+    </div>
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/common.js"></script>
+    @RenderSection("script", false)
+</body>
+</html>

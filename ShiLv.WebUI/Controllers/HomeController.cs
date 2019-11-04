@@ -20,5 +20,9 @@ namespace ShiLv.WebUI.Controllers
             hvm.Emergencys1 = emergencysBLL.GetEmergencysForIndex();
             return View(hvm);
         }
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }

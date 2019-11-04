@@ -147,6 +147,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\common.css" />
     <Content Include="Content\css\index.css" />
     <Content Include="Content\images\93064814c57aa1b4c7869e25620d4f36.png" />
     <Content Include="Content\images\background.png" />
@@ -172,13 +173,14 @@
     <Content Include="Content\images\work\4.png" />
     <Content Include="Content\images\work\5.png" />
     <Content Include="Content\images\work\6.png" />
+    <Content Include="Content\js\common.js" />
     <Content Include="Content\js\index.js" />
     <Content Include="Content\js\jquery.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\css\字魂43号-国潮手书.ttf" />
-    <Content Include="Content\css\李旭科书法.ttf" />
+    <Content Include="Content\fonts\guochaoshoushu.ttf" />
+    <Content Include="Content\fonts\lixuke.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -202,6 +204,8 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_MyLayout.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

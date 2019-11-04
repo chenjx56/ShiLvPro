@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'LixukeFont'; 
-    src: url('./lixuke.ttf'); 
+    src: url('../fonts/lixuke.ttf'); 
 }
 @font-face {
-    font-family: 'shoushuFont'; 
-    src: url('./guochaoshoushu.ttf');
+    font-family: 'shoushuFont';
+    src: url('../fonts/guochaoshoushu.ttf');
 }
 *{
     margin: 0;
