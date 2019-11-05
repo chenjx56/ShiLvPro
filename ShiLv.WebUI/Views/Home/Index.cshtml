@@ -11,6 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>拾绿 - 环保人的聚集地</title>
     <link rel="stylesheet" href="~/Content/css/index.css">
+    <link href="~/Content/css/iconfont.css" rel="stylesheet" />
     <link rel="shortcut icon" href="~/Content/images/favicon.ico">
 </head>
 <body>
@@ -35,9 +36,26 @@
                 <div class="click-hand"></div>
             </div>
             <div class="head-image">
-                <img src="~/Content/images/headImage1.jpg" alt="">
+                @if (Session["UserName"] != null)
+                {
+                    <a href="@Url.Action("Index", "UserInfo")"><img src="~/Content/images/@Session["UserImage"]" alt=""></a>
+                    <div class="user-message">
+                        <p class="name">@Session["NickName"]</p>
+                        <p class="iconfont icon-jifen">&nbsp;&nbsp;@Session["UserCredit"]</p>
+                        <div class="user-todo">
+                            <a href="#">个人中心</a>
+                            <a href="#">我的作品</a>
+                            <a href="#">我的购物车</a>
+                            <a class="logout" href="#">退出登录</a>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <a href="@Url.Action("Index", "UserInfo")"><img src="~/Content/images/headImage1.png" alt=""></a>
+                }
             </div>
-            <div class="top-logo"><span>拾起一片绿</span><a href="./Home/Index"><img src="~/Content/images/logo-border.png" alt="logo"></a><span>共迎一片天</span></div>
+            <div class="top-logo"><span>拾起一片绿</span><a href="@Url.Action("Index","Home")"><img src="~/Content/images/logo-border.png" alt="logo"></a><span>共迎一片天</span></div>
         </div>
         <!-- 轮播大图 -->
         <div class="banner">

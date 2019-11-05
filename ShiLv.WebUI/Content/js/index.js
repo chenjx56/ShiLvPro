@@ -83,3 +83,16 @@ $('.page-list li').mouseenter(function(){
 for (var i = 0; i < 3; i++) {
     $('.new-show .content').eq(i).html($('.new-show .content').eq(i).html().substring(0, 150) + "……");
 }
+
+//退出登录
+$(document).on('click', '.logout', function () {
+    $.ajax({
+        url: '/UserInfo/Logout',
+        type: 'post',
+        success: function(data){
+            if (data == "退出成功") {
+                $('.head-image').html('<a href="../UserInfo/Index"><img src="../Content/images/headImage1.png" alt=""></a>');
+            }
+        }
+    });
+});

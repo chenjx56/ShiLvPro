@@ -54,6 +54,8 @@
     <Compile Include="SqlNewsDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlArtefactsDAL.cs" />
+    <Compile Include="SqlUserDAL.cs" />
+    <Compile Include="SqlUserInfoDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IDAL\IDAL.csproj">

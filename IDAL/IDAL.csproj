@@ -45,6 +45,8 @@
     <Compile Include="IBaseDAL.cs" />
     <Compile Include="IEmergencysDAL.cs" />
     <Compile Include="INewsDAL.cs" />
+    <Compile Include="IUserDAL.cs" />
+    <Compile Include="IUserInfoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

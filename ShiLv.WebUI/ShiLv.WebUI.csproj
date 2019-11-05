@@ -149,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\common.css" />
+    <Content Include="Content\css\iconfont.css" />
     <Content Include="Content\css\index.css" />
     <Content Include="Content\css\login.css" />
     <Content Include="Content\images\93064814c57aa1b4c7869e25620d4f36.png" />
@@ -160,7 +161,9 @@
     <Content Include="Content\images\banner\button.png" />
     <Content Include="Content\images\banner\page1.png" />
     <Content Include="Content\images\favicon.ico" />
-    <Content Include="Content\images\headImage1.jpg" />
+    <Content Include="Content\images\user\cjx123.jpg" />
+    <Content Include="Content\images\user\xcdt123.jpg" />
+    <Content Include="Content\images\headImage1.png" />
     <Content Include="Content\images\index\title1.png" />
     <Content Include="Content\images\index\title2.png" />
     <Content Include="Content\images\index\title3.png" />
@@ -181,6 +184,7 @@
     <Content Include="Content\js\common.js" />
     <Content Include="Content\js\index.js" />
     <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\login.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

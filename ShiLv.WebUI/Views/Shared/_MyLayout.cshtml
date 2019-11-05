@@ -13,9 +13,18 @@
     <div class="bg">
         <!-- 顶部 -->
         <div class="nav-wrapper">
-            <div class="user-pic"><img src="~/Content/images/headImage1.jpg" alt=""></div>
+            <div class="user-pic">
+                @if (Session["UserName"] != null)
+                {
+                    <img src="~/Content/images/@Session["UserImage"]" alt="">
+                }
+                else
+                {
+                    <a href="@Url.Action("Index","UserInfo")"><img src="~/Content/images/headImage1.png" alt=""></a>
+                }
+            </div>
             <div class="nav">
-                <a href="#"><div class="nav-logo"></div></a>
+                <a href="@Url.Action("Index","Home")"><div class="nav-logo"></div></a>
                 <div class="nav-left nav-text">
                     <span><a href="#">拾绿之家</a></span>
                     <span><a href="">垃圾分类</a></span>

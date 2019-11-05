@@ -12,6 +12,9 @@ namespace DALFactory
     public class DateAccess
     {
         private static string AssemblyName = ConfigurationManager.AppSettings["Path"].ToString();
+
+        
+
         private static string db = ConfigurationManager.AppSettings["dbType"].ToString();
         public static INewsDAL GetNewsDAL()
         {
@@ -27,6 +30,16 @@ namespace DALFactory
         {
             string className = AssemblyName + "." + db + "EmergencysDAL";
             return (IEmergencysDAL)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
+        public static IUserInfoDAL GetUserInfoDAL()
+        {
+            string className = AssemblyName + "." + db + "UserInfoDAL";
+            return (IUserInfoDAL)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
+        public static IUserDAL GetUserDAL()
+        {
+            string className = AssemblyName + "." + db + "UserDAL";
+            return (IUserDAL)Assembly.Load(AssemblyName).CreateInstance(className);
         }
     }
 }
