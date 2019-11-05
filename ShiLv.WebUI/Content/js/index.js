@@ -32,7 +32,7 @@ $(window).resize(function(){
 })
 
 // 轮播图
-var bannerTimer = setInterval(BannerFunc,2000),
+var bannerTimer = setInterval(BannerFunc,3000),
     bannerIndex = 0,
     banenrFlag = true;
 function BannerFunc(){
@@ -96,3 +96,20 @@ $(document).on('click', '.logout', function () {
         }
     });
 });
+
+//回到顶部
+$('.to-up-page').hide();
+$(window).scroll(function () {
+    $('.to-up-page').css({ bottom: '100px' });
+    if ($(window).scrollTop() > 50) {
+        $('.to-up-page').fadeIn(500);
+    } else {
+        $('.to-up-page').fadeOut(200);
+    }
+})
+$('.to-up-page').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 500);
+    $('.to-up-page').animate({ bottom: '100%', opacity: 0 }, 800, function () {
+        $('.to-up-page').css({ opacity: 1 });
+    });
+})

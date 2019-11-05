@@ -153,3 +153,15 @@ body {
     color: rgb(226,221,217);
     margin: 0 30px;
 }
+/*回到顶部*/
+.to-up-page{
+    cursor:pointer;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:100px;
+    right:50px;
+}
+.to-up-page img{
+    width:100%;
+}

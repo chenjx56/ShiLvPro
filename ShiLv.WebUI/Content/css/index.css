@@ -107,7 +107,7 @@ a{
     font-family: 'shoushuFont';
     line-height: 100px;
     font-size: 20px;
-    z-index: 20;
+    z-index: 30;
 }
 .top-nav .left a,
 .top-nav .right a{
@@ -201,6 +201,11 @@ a{
     width: 200px;
     vertical-align: middle;
     transition: 0.8s all;
+}
+.top-logo.active{
+    width:120px;
+    min-width:120px;
+    font-size:0;
 }
 .top-logo.active img{
     width: 100px;
@@ -511,4 +516,16 @@ a{
 .page-foot a{
     color: rgb(226,221,217);
     margin: 0 30px;
+}
+/*回到顶部*/
+.to-up-page{
+    cursor:pointer;
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:100px;
+    right:50px;
+}
+.to-up-page img{
+    width:100%;
 }

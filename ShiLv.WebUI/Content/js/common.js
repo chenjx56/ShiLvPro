@@ -37,3 +37,19 @@ $(document).on("resize",function(){
         }   
     }
 })   
+//»Øµ½¶¥²¿
+$('.to-up-page').hide();
+$(window).scroll(function () {
+    $('.to-up-page').css({ bottom: '100px' });
+    if ($(window).scrollTop() > 50) {
+        $('.to-up-page').fadeIn(500);
+    } else {
+        $('.to-up-page').fadeOut(200);
+    }
+})
+$('.to-up-page').click(function () {
+    $('body,html').animate({ scrollTop: 0 }, 500);
+    $('.to-up-page').animate({ bottom: '100%', opacity: 0 }, 800, function () {
+        $('.to-up-page').css({ opacity: 1 });
+    });
+})

@@ -161,6 +161,7 @@
     <Content Include="Content\images\banner\button.png" />
     <Content Include="Content\images\banner\page1.png" />
     <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\to-up-page.png" />
     <Content Include="Content\images\user\cjx123.jpg" />
     <Content Include="Content\images\user\xcdt123.jpg" />
     <Content Include="Content\images\headImage1.png" />
