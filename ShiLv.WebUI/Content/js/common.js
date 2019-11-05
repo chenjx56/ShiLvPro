@@ -13,7 +13,7 @@ $('.nav-wrapper .nav-logo').fadeIn(800,'linear',function(){
     },function(){
         if ($(document).width()>=1180){
             $(".nav-wrapper .user-pic").animate({
-            top:'50%',
+            top:'58%',
             marginTop:"-32.5px"
             },800)
         }     
@@ -31,7 +31,7 @@ $(document).on("resize",function(){
     {
         if ($(document).width()>1180){
             $(".nav-wrapper .user-pic").stop().animate({
-            top:'50%',
+            top:'58%',
             marginTop:"-32.5px"
             },800)
         }   

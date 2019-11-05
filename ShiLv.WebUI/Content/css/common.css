@@ -39,11 +39,16 @@ body {
 }
 .nav-wrapper .user-pic{
     position: absolute;
-    width: 65px;
-    height: 65px;
-    border-radius: 100%;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    overflow:hidden;
     left: 10px;
     top:-100px;
+}
+.nav-wrapper .user-pic img{
+    width: 100%;
 }
 .nav-wrapper a{
     color:black
@@ -77,7 +82,10 @@ body {
 }
 .nav-wrapper .nav span{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
+}
+.nav-wrapper .nav span a{
+    color: #555;
 }
 
 
