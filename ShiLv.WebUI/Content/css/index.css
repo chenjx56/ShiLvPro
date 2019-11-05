@@ -154,10 +154,6 @@ a{
     vertical-align: middle;
     transition: 0.8s all;
 }
-.top-logo.active{
-    /* width: 180px;
-    min-width: 180px; */
-}
 .top-logo.active img{
     width: 100px;
     height: 100px;
