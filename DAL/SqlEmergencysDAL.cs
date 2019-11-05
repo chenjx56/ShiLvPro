@@ -10,11 +10,5 @@ namespace DAL
 {
     public class SqlEmergencysDAL : SqlBaseDAL<Emergencys>, IEmergencysDAL
     {
-        public IQueryable<Emergencys> GetEmergencysForIndex()
-        {
-            var emerList = db.Emergencys.Select(o => o).OrderByDescending(p => p.publishTime).Distinct().Take(15);
-            return emerList;
-        }
-        
     }
 }

@@ -140,6 +140,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserInfoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -149,6 +150,7 @@
   <ItemGroup>
     <Content Include="Content\css\common.css" />
     <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\login.css" />
     <Content Include="Content\images\93064814c57aa1b4c7869e25620d4f36.png" />
     <Content Include="Content\images\background.png" />
     <Content Include="Content\images\banner\banner1.jpg" />
@@ -162,11 +164,14 @@
     <Content Include="Content\images\index\title1.png" />
     <Content Include="Content\images\index\title2.png" />
     <Content Include="Content\images\index\title3.png" />
+    <Content Include="Content\images\login-bg.jpg" />
     <Content Include="Content\images\logo-border.png" />
     <Content Include="Content\images\logo-noborder.png" />
     <Content Include="Content\images\news\1.jpg" />
     <Content Include="Content\images\news\2.jpg" />
     <Content Include="Content\images\news\3.jpeg" />
+    <Content Include="Content\images\UserName.png" />
+    <Content Include="Content\images\UserPwd.png" />
     <Content Include="Content\images\work\1.png" />
     <Content Include="Content\images\work\2.png" />
     <Content Include="Content\images\work\3.png" />
@@ -206,6 +211,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_MyLayout.cshtml" />
     <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\UserInfo\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -17,7 +17,7 @@ namespace BLL
         }
         public IQueryable<Artefacts> GetArtefactsForIndex()
         {
-            return artefactsDAL.GetArtefactsForIndex();
+            return artefactsDAL.GetModels(o => o != null).OrderBy(p => p.ID).Take(6);
         }
     }
 }

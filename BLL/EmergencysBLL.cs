@@ -17,7 +17,7 @@ namespace BLL
         }
         public IQueryable<Emergencys> GetEmergencysForIndex()
         {
-            return emergencysDAL.GetEmergencysForIndex();
+            return emergencysDAL.GetModels(o => o != null).OrderByDescending(p => p.publishTime).Distinct().Take(15);
         }
     }
 }

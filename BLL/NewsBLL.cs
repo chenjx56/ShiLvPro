@@ -17,11 +17,11 @@ namespace BLL
         }
         public IQueryable<News> GetNewsByName(string newsName)
         {
-            return newsDAL.GetNewsByName(newsName);
+            return newsDAL.GetModels(p => p.Title.Contains(newsName));
         }
         public IQueryable<News> GetNewsForIndex()
         {
-            return newsDAL.GetNewsForIndex();
+            return newsDAL.GetModels(o => o != null).OrderByDescending(p => p.CreateTime).Take(3);
         }
     }
 }

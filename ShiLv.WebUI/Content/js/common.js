@@ -7,7 +7,7 @@ $('.nav-wrapper .nav-logo').fadeIn(800,'linear',function(){
         width: '100px',
         height: '100px',
         left: '50%',
-        top: '55%', 
+        top: '50%', 
         marginLeft: '-50px',
         marginTop: '-50px'
     },function(){

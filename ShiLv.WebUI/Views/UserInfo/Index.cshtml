@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "登录";
+}
+<div class="login-box">
+    <img src="~/Content/images/login-bg.jpg" alt="Alternate Text" />
+    <div class="info">
+        <p class="title">用户登录</p>
+        <div class="user-name">
+            <label>
+                <p><img src="~/Content/images/UserName.png" alt="用户名" /></p>
+                <input type="text" name="UserName" value="" />
+            </label>
+        </div>
+        <div class="user-pwd">
+            <label>
+                <p><img src="~/Content/images/UserPwd.png" alt="登录密码" /></p>
+                <input type="password" name="UserPwd" value="" />
+            </label>
+        </div>
+        <a class="btn-login" href="#">登录</a>
+        <div class="login-bottom">
+            <a href="#">忘记密码</a>
+            <a href="#">注册账号</a>
+        </div>
+    </div>
+</div>
+
+@section css{
+<link href="~/Content/css/login.css" rel="stylesheet" />
+}

@@ -9,6 +9,5 @@ namespace IDAL
 {
     public interface IEmergencysDAL : IBaseDAL<Emergencys>
     {
-        IQueryable<Emergencys> GetEmergencysForIndex();
     }
 }

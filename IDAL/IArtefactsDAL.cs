@@ -9,6 +9,5 @@ namespace IDAL
 {
     public interface IArtefactsDAL : IBaseDAL<Artefacts>
     {
-        IQueryable<Artefacts> GetArtefactsForIndex();
     }
 }
