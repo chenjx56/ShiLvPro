@@ -41,5 +41,10 @@ namespace DALFactory
             string className = AssemblyName + "." + db + "UserDAL";
             return (IUserDAL)Assembly.Load(AssemblyName).CreateInstance(className);
         }
+        public static IAdminDAL GetAdminDAL()
+        {
+            string className = AssemblyName + "." + db + "AdminDAL";
+            return (IAdminDAL)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
     }
 }

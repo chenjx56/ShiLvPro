@@ -1,0 +1,138 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>后台登录 - 拾绿</title>
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body {
+            background: #92b3a5;
+        }
+        .login-box{
+            position:absolute;
+            top:50%;
+            left:50%;
+            width:400px;
+            height:400px;
+            margin-top:-200px;
+            margin-left:-200px;
+            background:#fff;
+            border-radius:1em;
+        }
+        label{
+            display:block;
+            width:80%;
+            margin:30px auto;
+            margin-top:0;
+            border:1px solid #888;
+        }
+        input{
+            width:80%;
+            height:35px;
+            outline:none;
+            border:none;
+            font-size:15px;
+            padding-left:10px;
+        }
+        .title{
+            text-align:center;
+            margin:40px auto;
+            margin-bottom: 40px;
+            font-size:20px;
+            color:#666;
+        }
+        label p{
+            float:left;
+            width:10%;
+            background:#888;
+            height:35px;
+            margin-bottom:0px;
+        }
+        label p img{
+            width:100%;
+        }
+        .btn-login{
+            cursor:pointer;
+            display:block;
+            height:40px;
+            line-height:40px;
+            width:80%;
+            border:none;
+            margin:50px auto;
+            background:#92b3a5;
+            color:#fff;
+            border-radius:1em;
+            transition: .5s all;
+        }
+        .btn-login:hover{
+            width:85%;
+            font-size:15px;
+            height:45px;
+            line-height: 45px;
+            transform: translateY(-5%);
+        }
+        p.tips{
+            height:20px;
+            width:80%;
+            margin:0 auto;
+            color:red;
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <p class="title">后台入口</p>
+        <p class="tips"></p>
+        <label>
+            <p><img src="~/Content/images/UserName.png" alt="ID" /></p>
+            <input type="text" id="AdminID" name="AdminID" value="" />
+        </label>
+        <label>
+            <p><img src="~/Content/images/UserPwd.png" alt="登录密码" /></p>
+            <input type="password" id="AdminPwd" name="AdminPwd" value="" />
+        </label>
+        <button class="btn-login">登录</button>
+    </div>
+    <script src="~/Content/js/jquery.js"></script>
+    <script>
+        $('.btn-login').on('click', function () {
+            if ($('#AdminID').val().length == 0) {
+                $('.tips').html("请输入ID！");
+                $('#AdminID').focus();
+            } else if ($('#AdminPwd').val().length == 0) {
+                $('.tips').html("请输入密码！");
+                $('#AdminPwd').focus();
+            } else {
+                $.ajax({
+                    url: '/Admin/Login',
+                    type: 'post',
+                    data: {
+                        ID : $('#AdminID').val(),
+                        AdminPwd : $('#AdminPwd').val()
+                    },
+                    success: function (data) {
+                        if (data == "登录成功") {
+                            window.location.href = '../Admin/Index';
+                        } else {
+                            $('.tips').html("ID或密码错误！");
+                            $('#AdminID').val();
+                            $('#AdminPwd').val();
+                            $('#AdminID').focus();
+                        }
+                    }
+                });
+            }
+        })
+    </script>
+</body>
+</html>

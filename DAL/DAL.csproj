@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SqlAdminDAL.cs" />
     <Compile Include="SqlEmergencysDAL.cs" />
     <Compile Include="SqlBaseDAL.cs" />
     <Compile Include="DbContextFactory.cs" />
