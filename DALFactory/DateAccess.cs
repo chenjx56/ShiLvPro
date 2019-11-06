@@ -46,5 +46,15 @@ namespace DALFactory
             string className = AssemblyName + "." + db + "AdminDAL";
             return (IAdminDAL)Assembly.Load(AssemblyName).CreateInstance(className);
         }
+        public static IJunkDAL GetJunkDAL()
+        {
+            string className = AssemblyName + "." + db + "JunkDAL";
+            return (IJunkDAL)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
+        public static IJunkTypeDAL GetJunkTypeDAL()
+        {
+            string className = AssemblyName + "." + db + "JunkTypeDAL";
+            return (IJunkTypeDAL)Assembly.Load(AssemblyName).CreateInstance(className);
+        }
     }
 }

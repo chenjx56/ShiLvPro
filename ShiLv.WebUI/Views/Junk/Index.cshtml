@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Models.JunkType>
+
+@{
+    ViewBag.Title = "垃圾分类";
+}
+<div style="width:80%;background: rgba(255,255,255,0.4);">
+    @{ Html.RenderAction("Test", "Junk");}
+</div>
+
+
+
+@section css{
+    <link href="~/Content/css/Junk.css" rel="stylesheet" />
+}
+@section script{
+    <script src="~/Content/js/Junk.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

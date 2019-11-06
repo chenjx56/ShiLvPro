@@ -13,6 +13,5 @@ namespace IDAL
         void Update(T t);
         void Remove(T t);
         IQueryable<T> GetModels(Expression<Func<T, bool>> whereLambda);
-        IQueryable<T> GetModelsByPage<type>(int pageSize, int pageIndex, bool isAsc, Expression<Func<T, type>> OrderByLambda, Expression<Func<T, bool>> WhereLambda);
     }
 }

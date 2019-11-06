@@ -28,6 +28,13 @@ namespace ShiLv.WebUI.Controllers
         {
             return View();
         }
+
+        /// <summary>
+        /// 管理员登录
+        /// </summary>
+        /// <param name="ID"></param>
+        /// <param name="AdminPwd"></param>
+        /// <returns></returns>
         [HttpPost]
         public string Login([Bind(Include = "ID,AdminPwd")]string ID,string AdminPwd)
         {
@@ -57,7 +64,9 @@ namespace ShiLv.WebUI.Controllers
             
         }
 
-        //注销
+        /// <summary>
+        /// 注销
+        /// </summary>
         public void logout()
         {
             Session["AdminID"] = null;

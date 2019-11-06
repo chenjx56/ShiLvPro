@@ -172,3 +172,7 @@ C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\S
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\obj\Debug\ShiLv.WebUI.csproj.CopyComplete
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\obj\Debug\ShiLv.WebUI.dll
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\obj\Debug\ShiLv.WebUI.pdb
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\PagedList.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\PagedList.Mvc.dll
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\PagedList.xml
+C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\ShiLv.WebUI\bin\PagedList.Mvc.xml

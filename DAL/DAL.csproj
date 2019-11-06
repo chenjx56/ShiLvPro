@@ -48,10 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SqlJunkTypeDAL.cs" />
     <Compile Include="SqlAdminDAL.cs" />
     <Compile Include="SqlEmergencysDAL.cs" />
     <Compile Include="SqlBaseDAL.cs" />
     <Compile Include="DbContextFactory.cs" />
+    <Compile Include="SqlJunkDAL.cs" />
     <Compile Include="SqlNewsDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlArtefactsDAL.cs" />

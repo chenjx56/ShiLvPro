@@ -1,0 +1,46 @@
+﻿@model PagedList.IPagedList<Models.Junks>
+@using PagedList.Mvc;
+
+@{
+    Layout = null;
+}
+<div id="JunkListAjax">
+    <link href="~/Content/PagedList.css" rel=" stylesheet" />
+    @foreach (var item in Model)
+    {
+        <div class="item">
+            <div class="desc-img">
+                <img src="~/Content/images/@(item.JunkImage)" alt="@(item.JunksName)" />
+            </div>
+            <p class="name">@(item.JunksName)</p>
+            <p class="type">@(item.JunkType.TypeName)</p>
+            <div class="attitude">
+                <div class="like">@(item.LikeNum)</div>
+                <div class="dislike">@(item.DislikeNum)</div>
+            </div>
+        </div>
+    }
+    @Html.PagedListPager(Model, page => Url.Action("Test", "Junk", new { page }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions { LinkToFirstPageFormat = "首页", LinkToLastPageFormat = "尾页", MaximumPageNumbersToDisplay = 5 }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "JunkListAjax" }))
+    @*@Html.PagedListPager(Model, page => Url.Action("Index", "Junk", new { page = page , jqueryUnobtrusive = true}), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions
+        {
+            Display = PagedListDisplayMode.IfNeeded,
+            //ItemSliceAndTotalFormat = "显示{0}条到{1}条,共{2}条",
+            LinkToNextPageFormat = ">>",
+            LinkToLastPageFormat = "尾页",
+            DisplayLinkToLastPage = PagedListDisplayMode.Always,
+            LinkToFirstPageFormat = "第一页",
+            DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+            LinkToPreviousPageFormat = "<<",
+            //DisplayItemSliceAndTotal = true,
+            //DisplayEllipsesWhenNotShowingAllPageNumbers = true,
+            //DisplayPageCountAndCurrentLocation = true,
+            //PageCountAndCurrentLocationFormat = "当前第{0}页,共{1}页",
+            ClassToApplyToLastListItemInPager = "highLight",
+            ClassToApplyToFirstListItemInPager = "highLight",
+            LiElementClasses = new List<string> { "highLight" }
+        },new AjaxOptions{
+            AllowCache = false,
+            UpdateTargetId = "JunkListAjax",
+            HttpMethod = "Post"
+        }))*@
+</div>

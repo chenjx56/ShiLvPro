@@ -10,7 +10,6 @@ namespace ShiLv.WebUI.Controllers
 {
     public class UserInfoController : Controller
     {
-        ShiLvDBEntities db = new ShiLvDBEntities();
         UserBLL userInfoManager = new UserBLL();
         // GET: UserInfo
         public ActionResult Index()
@@ -39,14 +38,14 @@ namespace ShiLv.WebUI.Controllers
                 }
                 return data;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 data = "登录出错";
                 return data;
             }
         }
         #endregion
-        #region 注销登录
+        #region 注销
         [HttpPost]
         public string Logout()
         {

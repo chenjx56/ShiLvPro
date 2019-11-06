@@ -1,0 +1,70 @@
+﻿#JunkListAjax {
+    width: 100%;
+    margin: 100px auto;
+}
+.item {
+    float: left;
+    width: 25%;
+    height: 400px;
+    transition: .5s all;
+}
+.item:hover {
+    box-shadow: 5px 5px 5px 2px #888;
+    transform:translate3d(-2%,-2%,0);
+    background: rgba(255,255,255,0.3);
+}
+.desc-img {
+    width: 30%;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 2px solid #666;
+    text-align: center;
+    overflow: hidden;
+}
+.desc-img img{
+    width:100%;
+    border-radius: 50%;
+}
+.name,.type,.like,.dislike{
+    text-align:center;
+}
+.type{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.like, .dislike{
+    width:50%;
+    float:left;
+    font-size:20px;
+}
+.name {
+    color: #4f4032;
+    font-size: 25px;
+    font-weight:bold;
+}
+.type {
+    font-size: 21px;
+    color: #92b3a5;
+}
+.like {
+    color: #2177b8;
+}
+.dislike {
+    color: #c02c38;
+}
+
+ul.pagination {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    margin-bottom: 40px;
+    margin-bottom: 80px;
+}
+ul.pagination li.active a{
+    background:#92b3a5;
+    border:1px solid #92b3a5;
+}
+ul.pagination li.active a:hover{
+    background:#92b3a5;
+    border:1px solid #92b3a5;
+}

@@ -72,7 +72,7 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Content" Type="nvarchar(max)" />
           <Property Name="EmerImage" Type="nvarchar" MaxLength="50" />
-          <Property Name="EmerPlace" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmerPlace" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="publishTime" Type="datetime" Nullable="false" />
           <Property Name="NowState" Type="int" Nullable="false" />
@@ -112,7 +112,7 @@
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="JunksName" Type="nvarchar" MaxLength="20" Nullable="false" />
-          <Property Name="JunkImage" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="JunkImage" Type="nvarchar" MaxLength="50" />
           <Property Name="JunkTypeId" Type="int" Nullable="false" />
           <Property Name="UserName" Type="nvarchar" MaxLength="20" Nullable="false" />
           <Property Name="LikeNum" Type="int" Nullable="false" />
@@ -899,7 +899,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="EmerImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="EmerPlace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EmerPlace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="publishTime" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="NowState" Type="Int32" Nullable="false" />
@@ -948,7 +948,7 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="JunksName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="JunkImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="JunkImage" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="JunkTypeId" Type="Int32" Nullable="false" />
           <Property Name="UserName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="LikeNum" Type="Int32" Nullable="false" />

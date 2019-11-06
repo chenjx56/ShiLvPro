@@ -45,6 +45,8 @@
     <Compile Include="ArtefactsBLL.cs" />
     <Compile Include="BaseBLL.cs" />
     <Compile Include="EmergencysBLL.cs" />
+    <Compile Include="JunkBLL.cs" />
+    <Compile Include="JunkTypeBLL.cs" />
     <Compile Include="NewsBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserBLL.cs" />

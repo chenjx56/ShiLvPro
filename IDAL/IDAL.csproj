@@ -44,6 +44,8 @@
     <Compile Include="IArtefactsDAL.cs" />
     <Compile Include="IBaseDAL.cs" />
     <Compile Include="IEmergencysDAL.cs" />
+    <Compile Include="IJunkDAL.cs" />
+    <Compile Include="IJunkTypeDAL.cs" />
     <Compile Include="INewsDAL.cs" />
     <Compile Include="IAdminDAL.cs" />
     <Compile Include="IUserDAL.cs" />

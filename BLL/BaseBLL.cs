@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -29,6 +30,10 @@ namespace BLL
         public void Update(T t)
         {
             Dal.Update(t);
+        }
+        public IQueryable<T> GetModels(Expression<Func<T, bool>> whereLambda)
+        {
+            return Dal.GetModels(whereLambda);
         }
     }
 }
