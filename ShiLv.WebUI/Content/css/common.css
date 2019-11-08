@@ -43,12 +43,14 @@ body {
     height:50px;
     border-radius: 50%;
     border: 1px solid #fff;
-    overflow:hidden;
     left: 10px;
     top:-100px;
 }
 .nav-wrapper .user-pic img{
+    position:relative;
     width: 100%;
+    border-radius: 50%;
+    z-index:100;
 }
 .nav-wrapper a{
     color:black
@@ -88,9 +90,54 @@ body {
     color: #555;
 }
 
+/*用户详细信息*/
+.user-message{
+    display:none;
+    position:absolute;
+    height:300px;
+    width:250px;
+    background: #fff;
+    z-index:1;
+    transform:translateY(-10%) translateX(-5%);
+}
+.user-message .name{
+    font-family: shoushuFont;
+    text-align:center;
+    font-size:18px;
+    color:#666;
+    height:40px;
+}
+.icon-jifen {
+    width: 80%;
+    margin: 10px auto;
+    color: #92b3a5;
+    border-bottom: 1px solid rgb(112,136,125);
+    text-align: center;
+}
+.user-pic:hover .user-message {
+    display: block;
+}
+.user-todo{
+    width:80%;
+    margin:0 auto;
+}
+.user-todo a {
+    display: block;
+    text-decoration: none;
+    color: #888;
+    text-align:center;
+    margin-top:5px;
+    border-radius:1em;
+    height:30px;
+    line-height:30px;
+}
+.user-todo a:hover{
+    color:#fff;
+    background:#69a794;
+}
 
 /* 底部页脚 */
-.page-bottom{
+.page-bottom {
     width: 90%;
     margin: 0 auto;
     color: rgb(226,221,217);
@@ -132,6 +179,7 @@ body {
 }
 .page-bottom .bottom-logo img{
     width: 80%;
+    max-width:300px;
     transform: translateY(-50%);
     transition: .8s all;
 }

@@ -171,6 +171,23 @@
     <Content Include="Content\images\banner\button.png" />
     <Content Include="Content\images\banner\page1.png" />
     <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\junk\1.png" />
+    <Content Include="Content\images\junk\10.png" />
+    <Content Include="Content\images\junk\11.png" />
+    <Content Include="Content\images\junk\12.png" />
+    <Content Include="Content\images\junk\13.png" />
+    <Content Include="Content\images\junk\14.png" />
+    <Content Include="Content\images\junk\15.png" />
+    <Content Include="Content\images\junk\16.png" />
+    <Content Include="Content\images\junk\2.png" />
+    <Content Include="Content\images\junk\3.png" />
+    <Content Include="Content\images\junk\4.png" />
+    <Content Include="Content\images\junk\5.png" />
+    <Content Include="Content\images\junk\6.png" />
+    <Content Include="Content\images\junk\7.png" />
+    <Content Include="Content\images\junk\8.png" />
+    <Content Include="Content\images\junk\9.png" />
+    <Content Include="Content\images\load-show.jpg" />
     <Content Include="Content\images\to-up-page.png" />
     <Content Include="Content\images\user\cjx123.jpg" />
     <Content Include="Content\images\user\xcdt123.jpg" />
@@ -194,6 +211,7 @@
     <Content Include="Content\images\work\6.png" />
     <Content Include="Content\js\common.js" />
     <Content Include="Content\js\index.js" />
+    <Content Include="Content\js\jq-form.js" />
     <Content Include="Content\js\jquery.js" />
     <Content Include="Content\js\Junk.js" />
     <Content Include="Content\js\login.js" />
@@ -232,11 +250,12 @@
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\UserInfo\Index.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
-    <Content Include="Views\Junk\Test.cshtml" />
+    <Content Include="Views\Junk\GetJunksByPage.cshtml" />
     <Content Include="Views\Junk\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="TestLoad\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

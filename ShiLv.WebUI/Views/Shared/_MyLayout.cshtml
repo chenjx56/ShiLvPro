@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@ViewBag.Title - 拾绿网</title>
     <link href="~/Content/css/common.css" rel="stylesheet" />
+    <link href="~/Content/css/iconfont.css" rel="stylesheet" />
     <link rel="shortcut icon" href="~/Content/images/favicon.ico">
     @RenderSection("css", false)
 </head>
@@ -17,6 +18,16 @@
                 @if (Session["UserName"] != null)
                 {
                     <img src="~/Content/images/@Session["UserImage"]" alt="">
+                    <div class="user-message">
+                        <p class="name" id="@Session["UserName"]">@Session["NickName"]</p>
+                        <p class="iconfont icon-jifen">&nbsp;&nbsp;@Session["UserCredit"]</p>
+                        <div class="user-todo">
+                            <a href="#">个人中心</a>
+                            <a href="#">我的作品</a>
+                            <a href="#">我的购物车</a>
+                            <a class="logout" href="#">退出登录</a>
+                        </div>
+                    </div>
                 }
                 else
                 {

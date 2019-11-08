@@ -1,18 +1,55 @@
-﻿@model IEnumerable<Models.JunkType>
-
-@{
+﻿@{
     ViewBag.Title = "垃圾分类";
 }
-<div style="width:80%;background: rgba(255,255,255,0.4);">
-    @{ Html.RenderAction("Test", "Junk");}
+<div style="width:80%;background: rgba(255,255,255,0.4);min-height:600px;padding-top:50px;margin-top:100px;">
+    <div class="select">
+        @Html.DropDownList("selectList")
+    </div>
+    <div class="search bar6">
+        <input type="text" placeholder="输入垃圾名称..." id="JunkName">
+        <button></button>
+    </div>
+    <div id="AddJunks">
+        <span class="icon iconfont icon-jia"></span>
+    </div>
+    <div id="junksContainer">
+        @{Html.RenderAction("GetJunksByPage", "Junk");}
+    </div>
 </div>
-
-
-
+<div class="add-bg">
+    <div class="add-box">
+        <span class="icon iconfont icon-cha"></span>
+        <p class="add-title">添加分类</p>
+        <label>
+            <span>垃圾名称</span>
+            <input type="text" id="addName" value="" />
+        </label>
+        <label>
+            <span>垃圾类别</span>
+            <div class="select">
+                @Html.DropDownList("selectList")
+            </div>
+        </label>
+        <div class="load-pic">
+            <form id="junk-pic" method="post" enctype="multipart/form-data">
+                <input type="file" id="picAjax" name="image" value="" />
+                <span class="tips">
+                    png/jpg/jpeg
+                </span>
+                <br />
+                <div class="pic-box">
+                    <img src="~/Content/images/load-show.jpg" alt="图片预览"  id="selImg" />
+                </div>
+            </form>
+            <button id="btn-up">提交</button>
+        </div>
+    </div>
+</div>
 @section css{
     <link href="~/Content/css/Junk.css" rel="stylesheet" />
 }
 @section script{
-    <script src="~/Content/js/Junk.js"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Content/js/jq-form.js"></script>
+    <script src="~/Content/js/Junk.js"></script>
 }
