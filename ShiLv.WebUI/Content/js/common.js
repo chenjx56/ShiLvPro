@@ -53,3 +53,15 @@ $('.to-up-page').click(function () {
         $('.to-up-page').css({ opacity: 1 });
     });
 })
+//ÍË³öµÇÂ¼
+$(document).on('click', '.logout', function () {
+    $.ajax({
+        url: '/UserInfo/Logout',
+        type: 'post',
+        success: function (data) {
+            if (data == "success") {
+                $('.user-pic').html('<a href="../UserInfo/Index"><img src="../Content/images/headImage1.png" alt=""></a>');
+            }
+        }
+    });
+});

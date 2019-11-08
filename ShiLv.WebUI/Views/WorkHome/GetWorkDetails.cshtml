@@ -1,0 +1,24 @@
+﻿@model ShiLv.WebUI.Models.DetailsWorkPartialViewModel
+@{
+    Layout = null;
+}
+<div class="gray-bg">
+    <div class="remove"></div>
+</div>
+<div class="pic-detail">
+    <div class="author-pic"><img src="~/Content/images/@(Model.UserInfo.UserImage)" alt=""></div>
+    <div class="author-intro">
+        <span class="author-name"></span>
+        <div class="author-follow">&nbsp;&nbsp;&nbsp;关注</div>
+    </div>
+    <div class="picture-box">
+        <div class="work-intro">@(Model.Artefacts.Name)</div>
+        <div class="work-picture">
+            <img src="../Content/images/@(Model.Artefacts.ArtefactImage)" alt="">
+        </div>
+    </div>
+    <div class="value-box">
+        <img src="../Content/images/work/赞 点赞.png" alt="" width="40" height="40">
+        <span>已获赞：<input type="text" readonly="readonly" value="@(Model.Artefacts.LikeNum)"></span>
+    </div>
+</div>

@@ -1,0 +1,189 @@
+﻿@model ShiLv.WebUI.Models.WorkHomeViewModel
+@{
+    ViewBag.Title = "作品";
+}
+
+<!-- 轮播图 -->
+<div class="lunbo-box">
+    <ul class="lunbo">
+        <li><img src="~/Content/images/work/lunbo1.jpg" alt="作品1" /></li>
+        <li><img src="~/Content/images/work/lunbo2.jpg" alt="作品2" /></li>
+        <li><img src="~/Content/images/work/lunbo3.jpg" alt="作品3" /></li>
+        <li><img src="~/Content/images/work/lunbo4.jpg" alt="作品4" /></li>
+        <li><img src="~/Content/images/work/lunbo1.jpg" alt="作品5" /></li>
+    </ul>
+    <ul class="lunbo-icon">
+        <li class="iconfont icon-Energy-"></li>
+        <li class="iconfont icon-Energy-"></li>
+        <li class="iconfont icon-Energy-"></li>
+        <li class="iconfont icon-Energy-"></li>
+    </ul>
+    <div class="arrow-box">
+        <div class="arrow left-arrow iconfont icon-huaban-"></div>
+        <div class="arrow right-arrow iconfont icon-huaban-"></div>
+    </div>
+    <div class="search-filter">
+        <div class="shut-search"></div>
+        <div class="search-box">
+            <form action="">
+                <input type="text" placeholder="请输入作品关键字">
+                <input type="submit" value="">
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 作品 -->
+<div class="item-head">
+    <img src="~/Content/images/work/userheader.png" alt="" width="600" height="300"><span>用户作品</span>
+    <img class="move" src="~/Content/images/work/flybird.gif" alt="" height="200" width="600">
+</div>
+<div class="work-container">
+    <div class="work-devided-bar">
+        <img src="~/Content/images/work/01.jpg" alt="" width="1180" height="130">
+    </div>
+    <div class="work-detail-box">
+        <div class="show-detail">
+            <img src="" alt="" width="400" height="460">
+        </div>
+        @foreach (var item in Model.NatureArtefacts.Take(3))
+        {
+            <div class="works-img" id="@(item.ID)">
+                <img src="~/Content/images/@(item.ArtefactImage)" width="250" height="250" />
+                <div class="hand-works-intro">
+                    <div class="intro-text">@(item.Name)</div>
+                </div>
+                <div class="text-filter">@(item.Name)</div>
+            </div>
+        }
+        <div class="show-detail bottom">
+            <img src="" alt="" width="400" height="460">
+        </div>
+        @foreach (var item in Model.NatureArtefacts.Skip(3))
+        {
+            <div class="works-img" id="@(item.ID)">
+                <img src="~/Content/images/@(item.ArtefactImage)" width="250" height="250" />
+                <div class="hand-works-intro">
+                    <div class="intro-text">@(item.Name)</div>
+                </div>
+                <div class="text-filter">@(item.Name)</div>
+            </div>
+        }
+        <div class="look-more">
+            <img src="~/Content/images/work/查看更多.png" alt="" width="70" height="70">
+            <span>查看更多</span>
+        </div>
+    </div>
+    <div class="work-devided-bar">
+        <img src="~/Content/images/work/02.jpg" alt="" width="1180" height="130">
+    </div>
+    <div class="work-detail-box">
+        <div class="show-detail">
+            <img src="" alt="" width="400" height="460">
+        </div>
+        @foreach (var item in Model.HandArtefacts.Take(3))
+        {
+            <div class="works-img" id="@(item.ID)">
+                <img src="~/Content/images/@(item.ArtefactImage)" width="250" height="250" />
+                <div class="hand-works-intro">
+                    <div class="intro-text">@(item.Name)</div>
+                </div>
+                <div class="text-filter">@(item.Name)</div>
+            </div>
+        }
+        <div class="show-detail bottom">
+            <img src="" alt="" width="400" height="460">
+        </div>
+        @foreach (var item in Model.HandArtefacts.Skip(3))
+        {
+            <div class="works-img" id="@(item.ID)">
+                <img src="~/Content/images/@(item.ArtefactImage)" width="250" height="250" />
+                <div class="hand-works-intro">
+                    <div class="intro-text">@(item.Name)</div>
+                </div>
+                <div class="text-filter">@(item.Name)</div>
+            </div>
+        }
+        <div class="look-more">
+            <img src="~/Content/images/work/查看更多.png" alt="" width="70" height="70">
+            <span>查看更多</span>
+        </div>
+    </div>
+    <div class="work-devided-bar">
+        <img src="~/Content/images/work/04.jpg" alt="" width="1180" height="130">
+    </div>
+    <div class="work-detail-box">
+        <div class="show-detail">
+            <img src="" alt="" width="400" height="460">
+        </div>
+        @foreach (var item in Model.AnimalArtefacts.Take(3))
+        {
+            <div class="works-img" id="@(item.ID)">
+                <img src="~/Content/images/@(item.ArtefactImage)" width="250" height="250" />
+                <div class="hand-works-intro">
+                    <div class="intro-text">@(item.Name)</div>
+                </div>
+                <div class="text-filter">@(item.Name)</div>
+            </div>
+        }
+        <div class="show-detail bottom">
+            <img src="" alt="" width="400" height="460">
+        </div>
+        @foreach (var item in Model.AnimalArtefacts.Skip(3))
+        {
+            <div class="works-img" id="@(item.ID)">
+                <img src="~/Content/images/@(item.ArtefactImage)" width="250" height="250" />
+                <div class="hand-works-intro">
+                    <div class="intro-text">@(item.Name)</div>
+                </div>
+                <div class="text-filter">@(item.Name)</div>
+            </div>
+        }
+        <div class="look-more">
+            <img src="~/Content/images/work/查看更多.png" alt="" width="70" height="70">
+            <span>查看更多</span>
+        </div>
+    </div>
+    <div class="work-devided-bar">
+        <img src="~/Content/images/work/05.jpg" alt="" width="1180" height="130">
+    </div>
+    <!--排行榜-->
+    <div class="rank-box">
+        <div class="show-box">
+            <img src="" alt="" width="590" height="380">
+        </div>
+        <div class="rank">
+            <div class="rank-title">原创作品排行榜</div>
+            <ul class="center">
+                <li><span class="top3">1</span>.作品名称<span class="author">作者名称</span></li>
+                <li><span class="top3">2</span>.作品名称<span class="author">作者名称</span></li>
+                <li><span class="top3">3</span>.作品名称<span class="author">作者名称</span></li>
+                <li>4.作品名称<span class="author">作者名称</span></li>
+                <li>5.作品名称<span class="author">作者名称</span></li>
+                <li>6.作品名称<span class="author">作者名称</span></li>
+            </ul>
+            <div class="rank-more glyphicon glyphicon-arrow-right"><a href="#">查看更多</a></div>
+        </div>
+    </div>
+    <!--排行榜-->
+</div>
+
+<!-- 用户 -->
+<div class="item-head">
+    <img src="~/Content/images/work/userheader.png" alt="" width="500" height="300"><span>活跃用户</span>
+    <img class="move" src="~/Content/images/work/flybird.gif" alt="" height="200" width="600">
+</div>
+<div class="user-container">
+    @foreach (var item in Model.UserInfo)
+    {
+        <div class="user-box">
+            <div class="user-pic"><img src="~/Content/images/@(item.UserImage)" alt=""></div>
+            <div class="user-name">@(item.NickName)</div>
+        </div>
+    }
+</div>
+@section css{
+    <link href="~/Content/css/work.css" rel="stylesheet" />
+}
+@section script{
+    <script src="~/Content/js/work.js"></script>
+}

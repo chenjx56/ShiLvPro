@@ -53,7 +53,7 @@ namespace ShiLv.WebUI.Controllers
             Session["UserImage"] = null;
             Session["NickName"] = null;
             Session["UserCredit"] = null;
-            return "退出成功";
+            return "success";
         }
         #endregion
     }

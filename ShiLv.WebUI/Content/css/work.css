@@ -1,0 +1,500 @@
+img{
+    vertical-align: unset;
+}
+*.modal-open { 
+    overflow-y: scroll; 
+    padding-right: 0 !important; 
+} 
+.lunbo-box img{
+    min-width: 1180px;
+}
+.lunbo-box{
+    position: relative;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+.lunbo-box .lunbo{
+    position: relative;
+    cursor: pointer;
+}
+.lunbo-box .lunbo::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.lunbo-box .lunbo li{
+    float: left;
+}
+.lunbo-box .arrow-box{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: none;
+}
+.lunbo-box .arrow-box .arrow {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 300%;
+}
+.lunbo-box .arrow-box .left-arrow{
+    float: left;
+    transform: rotateY(180deg); 
+    opacity:0.5;
+}
+.lunbo-box .arrow-box .left-arrow:hover,
+.lunbo-box .arrow-box .right-arrow:hover{
+    opacity: 1;
+}
+.lunbo-box .arrow-box .right-arrow {
+    float: right;
+    opacity: 0.5;
+}
+.lunbo-box:hover .arrow-box{
+    display: block;
+}
+.lunbo-box .lunbo-icon{
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.lunbo-box .lunbo-icon li{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 150%;
+}
+.lunbo-box .lunbo-icon li:hover{
+    color: green;
+}
+.lunbo-box .search-box{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 101;
+}
+.lunbo-box .search-box input{
+    border:0;
+    outline: none;
+    z-index: 199;
+}
+.lunbo-box .search-box input[type="text"]{
+    height: 80px;
+    width: 600px;
+    border-radius: 5em;
+    font-size: 150%;
+    padding: 0 75px 0 40px;
+}
+.lunbo-box .search-box input[type="submit"]{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    background: green;
+    font-size: 150%;
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+.lunbo-box .search-filter{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+.lunbo-box .search-filter div.shut-search{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    top:5px;
+    background: url('../images/work/叉.png');
+    background-size: 100% 100%;
+}
+.nav-wrapper .search-show{
+    position: absolute; 
+    right: 5px; 
+    top: 15px; 
+    z-index: 200; 
+    cursor: pointer;
+    display:none;
+}
+
+.item-head{
+    margin-top: 40px;
+    width: 1180px;
+    position: relative;
+    font-family: 'shoushuFont';
+    text-align: center;
+    font-weight: normal;
+    font-size: 50px;
+    transition: 0.3s all;
+}
+.item-head:hover{
+    transform:translateY(-10px);
+}
+.item-head span{
+    position: relative;
+    right: 150px;
+    bottom: 100px;
+}
+.item-head img.move{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.user-container{
+    margin-top: 50px;
+    width: 1180px;
+    height: 170px;
+}
+.user-container .user-box{
+    padding-top: 5px;
+    width: 150px;
+    height: 100%;
+    display: inline-block;
+    margin: 0 7px;
+    transition: 0.3s all;
+    background: rgba(0,0,0,0.1);
+}
+.user-container .user-box .user-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+.user-container .user-box .user-pic img{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+.user-container .user-box .user-name{
+    font-family: shoushuFont;
+    font-size: 150%;
+    margin-top: 10px;
+    text-align: center;
+}
+.user-container .user-box:hover .user-name{
+    visibility: visible;
+} 
+.user-container .user-box:hover{
+    transform:translateY(-10px);
+    border-radius: 1em;
+    border-top-left-radius: 4em;
+    border-top-right-radius: 4em;
+}
+.work-container{
+    width: 1180px;
+    padding-top: 50px;
+}
+.work-container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.work-container .work-devided-bar{
+    width: 1180px;
+    height: 130px;
+    background:green;
+}
+.work-container .work-detail-box{
+    margin: 20px 0 40px 0;
+    width: 100%;
+    /* background: #000; */
+}
+.work-container .work-detail-box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.work-container .work-detail-box .show-detail{
+    width: 400px;
+    height: 250px;
+    background: rgb(155, 155, 154);
+    float: left;
+    margin: 5px;
+    margin-left: 0;
+    overflow: hidden;
+}
+.work-container .work-detail-box .show-detail.bottom img{
+    position: relative;
+    top:-160px;
+}
+
+
+
+
+/* 作品 */
+.work-detail-box .works-img{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    margin: 3px;
+    overflow: hidden;
+    border-radius: 1em;
+    cursor: pointer;
+    background:gray;
+}
+.work-detail-box .works-img:nth-child(6),
+.work-detail-box .works-img:nth-child(3){
+    margin-right: 0;
+}
+
+.work-detail-box .works-img img{
+    border-radius: 1em;
+    position: relative;
+    display: inline-block;
+}
+
+.work-detail-box .works-img .hand-works-intro{
+    width:250px;
+    height: 120px;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(14, 22, 32, 0.8));
+    position: absolute;
+    bottom: 0;
+    color:white;
+}
+
+.work-detail-box .works-img .hand-works-intro .intro-text{
+    width:250px;
+    height:50px;
+    position: absolute;
+    text-align: center;
+    bottom: 0;  
+    line-height: 50px;
+    font-size: 110%;
+}
+
+.work-detail-box .works-img .text-filter{
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    border-radius: 0.5em;
+    color: white;
+    font-weight: bolder;
+    background:  rgba(0, 0, 0, 0.3);
+    font-size: 150%;
+    display: none;
+}
+.work-detail-box .look-more{
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s all;
+    
+}
+.work-detail-box .look-more span{
+    position: absolute;
+    bottom: -20px;
+}
+.work-detail-box .look-more:hover{
+    transform:translateY(-10px);
+}
+
+
+.work-container .rank-box{
+    float: left;
+    padding: 30px 0;
+    width: 100%;
+}
+.work-container .rank-box .show-box{
+    width: 50%;
+    border:5px solid gray;
+    float: left;
+    height: 380px;
+}
+.rank-box .rank{
+    float: left;
+    width: 49%;   
+    position: relative;
+    top:30px;   
+}
+.rank-box .rank-title{
+    color:white;
+    font-size: 200%;
+    text-align: center;
+}
+.rank-box ul{
+    display: block;
+    width: 80%;
+    text-align: left;
+    font-size: 150%;
+}
+.rank-box ul li{
+    margin: 10px;
+}
+.rank-box ul .top3{
+    color:#f84949;
+}
+.rank-box ul .author{
+    float: right;
+}
+.rank-box .rank-more{
+    font-size: 150%;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-6%,0);
+}
+
+
+
+
+
+
+
+
+
+.gray-bg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+}
+.gray-bg .glyphicon.glyphicon-remove{
+    color:white;
+    font-size: 250%;
+    position: absolute;
+    right: 5px;
+    top: 5px;    
+    cursor: pointer;
+}
+.pic-detail{
+    position: fixed;
+    z-index: 20000;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:550px;
+    height: 550px;
+    border:4px solid rgb(81,213,114);
+    background:  #92b3a5;
+    border-radius: 1em;
+}
+.author-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:4px solid rgb(81,213,114);
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    position: absolute;
+    left: 50%;
+    top:-52px;
+    transform: translate(-50%,0);
+}
+.author-pic img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+.pic-detail .author-intro{
+    padding: 0 40px;
+    height: 52px;
+    line-height: 52px;
+    position: relative;
+}
+.pic-detail .author-intro::after{
+    content: "";
+    display: block;
+    clear: both;
+    position: relative;
+}
+.pic-detail .author-intro{
+    font-weight: bolder;
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+.pic-detail .author-intro .author-name{
+
+}
+.pic-detail .author-intro .author-follow{
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    border-radius: 1em;
+    background:  rgb(81,213,114);
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    right: 50px;
+    transform: translate(0,-50%); 
+    cursor: pointer;
+}
+.pic-detail .author-intro .author-follow:hover{
+    color: rgb(81,213,114);
+    background: #e9e9e9;
+}
+.pic-detail .picture-box{
+    color:white;
+    font-weight: bolder;
+    font-size:200%;
+    text-align: center;
+}
+.work-picture img{
+    width: 90%;
+    height: 300px;
+    border:1px solid  rgb(81,213,114);
+    margin-bottom: 40px;
+}
+.pic-detail .value-box{
+    position: relative;
+    padding: 0 20px;
+    text-align: center;
+    height: 51px;
+    line-height: 51px;
+    font-size: 150%;
+}
+.pic-detail .value-box .glyphicon.glyphicon-hand-right{
+    display: inline-block;
+    color:red;
+    font-size: 200%;
+    border:4px solid red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.value-box input{
+    width: 40px;
+    background:  #92b3a5;
+    border: 0;
+    font-size: 101%;
+}
+.value-box span{
+    position: relative;
+    bottom: 10px;
+}
+
+.gray-bg .remove{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+    top:5px;
+    background: url('../images/work/叉.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+
+

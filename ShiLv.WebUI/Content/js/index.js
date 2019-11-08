@@ -90,7 +90,7 @@ $(document).on('click', '.logout', function () {
         url: '/UserInfo/Logout',
         type: 'post',
         success: function(data){
-            if (data == "退出成功") {
+            if (data == "success") {
                 $('.head-image').html('<a href="../UserInfo/Index"><img src="../Content/images/headImage1.png" alt=""></a>');
             }
         }
