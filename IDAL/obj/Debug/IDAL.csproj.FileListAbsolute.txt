@@ -24,3 +24,16 @@ C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\S
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.csproj.CopyComplete
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.dll
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\IDAL\obj\Debug\IDAL.pdb
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\IDAL.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\IDAL.pdb
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\Models.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\EntityFramework.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\Models.pdb
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\Models.dll.config
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\EntityFramework.xml
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\obj\Debug\IDAL.csprojAssemblyReference.cache
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\obj\Debug\IDAL.csproj.CoreCompileInputs.cache
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\obj\Debug\IDAL.csproj.CopyComplete
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\obj\Debug\IDAL.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\IDAL\obj\Debug\IDAL.pdb

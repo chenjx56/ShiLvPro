@@ -25,11 +25,15 @@ $('.top-nav').click(function(){
     $('.click-hand').css("opacity","0");
 })
 
-//调整轮播图大小
-$('.banner').height($('.banner img').height());
-$(window).resize(function(){
+$(function () {
+    //调整轮播图大小
     $('.banner').height($('.banner img').height());
-})
+    $(window).resize(function () {
+        $('.banner').height($('.banner img').height());
+    })
+});
+
+
 
 // 轮播图
 var bannerTimer = setInterval(BannerFunc,3000),
