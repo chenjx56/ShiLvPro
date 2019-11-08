@@ -28,3 +28,11 @@ C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\S
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.dll
 C:\Users\jxChen\Desktop\本学期项目——拾绿\项目源码\GitRepository\ShiLvPro\DAL\obj\Debug\DAL.pdb
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\ShiLv.WebUI\bin\DAL.dll.config
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\ShiLv.WebUI\bin\DAL.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\ShiLv.WebUI\bin\DAL.pdb
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\DAL\obj\Debug\DAL.csproj.CopyComplete
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\DAL\obj\Debug\DAL.dll
+F:\360MoveData\Users\asus\Desktop\MvcProject\GitProject\ShiLvPro\DAL\obj\Debug\DAL.pdb

@@ -211,38 +211,50 @@ img{
     /* background: #000; */
 }
 .work-container .work-detail-box::after{
+    
     content: "";
     display: block;
     clear: both;
 }
-.work-container .work-detail-box .show-detail{
+.work-container .work-detail-box .show-detail{ 
+    position: relative;
     width: 400px;
     height: 250px;
     background: rgb(155, 155, 154);
-    float: left;
-    margin: 5px;
+    /*float: left;*/
+    display:inline-block;
+    left:0;
+    margin:5px;
     margin-left: 0;
     overflow: hidden;
 }
+.work-container .work-detail-box .show-detail img{
+    position:absolute;
+    top:0;
+    left:0;
+}
 .work-container .work-detail-box .show-detail.bottom img{
-    position: relative;
-    top:-160px;
+    transform:translateY(-160px);
 }
 
 
 
 
 /* 作品 */
-.work-detail-box .works-img{
+.work-detail-box{
+    font-size : 0px;
+}
+.work-detail-box .works-img {
     width: 250px;
     height: 250px;
     display: inline-block;
     position: relative;
-    margin: 3px;
+    margin: 5px;
     overflow: hidden;
     border-radius: 1em;
     cursor: pointer;
-    background:gray;
+    background: gray;
+    font-size: 16px;
 }
 .work-detail-box .works-img:nth-child(6),
 .work-detail-box .works-img:nth-child(3){
