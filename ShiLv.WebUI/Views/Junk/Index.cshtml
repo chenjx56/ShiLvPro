@@ -12,9 +12,9 @@
     <div id="AddJunks">
         <span class="icon iconfont icon-jia"></span>
     </div>
-    <div id="junksContainer">
+    <form id="junksContainer">
         @{Html.RenderAction("GetJunksByPage", "Junk");}
-    </div>
+    </form>
 </div>
 <div class="add-bg">
     <div class="add-box">
@@ -26,9 +26,9 @@
         </label>
         <label>
             <span>垃圾类别</span>
-            <div class="select">
+            <form class="add-select">
                 @Html.DropDownList("selectList")
-            </div>
+            </form>
         </label>
         <div class="load-pic">
             <form id="junk-pic" method="post" enctype="multipart/form-data">

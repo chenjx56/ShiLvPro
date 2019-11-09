@@ -22,7 +22,7 @@
             <p class="user">by&nbsp;@(item.Users.UserInfo.NickName)</p>
         </div>
     }
-    @Html.PagedListPager(Model, page => Url.Action("GetJunksByPage", "Junk", new { page = page, type = Request.Form["selectList"] }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions { LinkToFirstPageFormat = "首页", LinkToLastPageFormat = "尾页", MaximumPageNumbersToDisplay = 5 }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "JunkListAjax" }))
+    @Html.PagedListPager(Model, page => Url.Action("GetJunksByPage", "Junk", new { page = page }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions { LinkToFirstPageFormat = "首页", LinkToLastPageFormat = "尾页", MaximumPageNumbersToDisplay = 5 }, new AjaxOptions { HttpMethod = "GET", InsertionMode = InsertionMode.Replace, UpdateTargetId = "JunkListAjax" }))
     @*@Html.PagedListPager(Model, page => Url.Action("Index", "Junk", new { page = page , jqueryUnobtrusive = true}), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new PagedListRenderOptions
         {
             Display = PagedListDisplayMode.IfNeeded,

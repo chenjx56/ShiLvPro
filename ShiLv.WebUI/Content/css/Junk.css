@@ -277,13 +277,22 @@ label input{
     padding-left:12px;
     
 }
-.add-box .select {
+.add-box .add-select {
     display: inline-block;
     margin-left: 10px;
     width: 193px;
     border: 1px solid #92b3a5;
     transform: translateY(-2px);
 }
-.add-box .select::before{
+.add-box .add-select::before{
     top:10px;
+    content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top-color: #92b3a5;
+	right: 10px;
+	cursor: pointer;
+	z-index: -2;
 }
