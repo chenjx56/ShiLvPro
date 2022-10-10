@@ -12,7 +12,7 @@
 
 ## 使用
 
-- 首先，利用SQLFile目录下的文件在SQL Server上创建数据库。
+- 首先，利用`ShiLvDB.bak`文件在SQL Server上创建数据库。
 
 - 使用Visual Studio 2017打开`ShiLvPro`
 - 在解决方案中，删除`Models目录下的ShiLv.edmx与App.Config`
