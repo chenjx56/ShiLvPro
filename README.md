@@ -1,6 +1,6 @@
 # ShiLvPro
 
-基于 ASP.NET Web (.NET Framwork) 开发的环保主题网站
+基于 ASP.NET Web (.NET Framework) 开发的环保主题网站
 
 ## 前言
 
